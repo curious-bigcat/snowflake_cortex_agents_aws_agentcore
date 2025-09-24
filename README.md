@@ -56,65 +56,180 @@ agentcore/
 
 ---
 
-## Setup & Deployment
+## Detailed Setup & Deployment Guide
 
 ### 1. Snowflake Setup
-- Follow `snowflake_setup_worksheet.sql` to:
-  - Create the database, stages, and network policy
-  - Upload and load your flight/hotel CSVs and travel guide PDF
-  - Create and populate the required tables
-  - Parse and chunk the travel guide for Cortex Search
-  - Create the Cortex Search service
 
-### 2. CloudFormation Prerequisites
-- Deploy the stack to create IAM role, ECR repo, and a Secrets Manager secret:
-  ```sh
-  aws cloudformation create-stack \
-    --stack-name agentcore-prereqs \
-    --template-body file://agentcore-prereqs.yaml \
-    --capabilities CAPABILITY_NAMED_IAM
-  ```
-- Outputs:
-  - `ExecutionRoleArn`: Use for agentcore configure
-  - `ECRRepositoryUri`: Used internally by agentcore
-  - `AgentCoreSecretArn`: Use as `AGENTCORE_SECRET_NAME` env var
+**a. Create Database, Schema, and Tables**
+- Log in to your Snowflake account (via web UI or SnowSQL CLI).
+- Run the provided SQL script to create the necessary database, schema, and tables:
 
-### 3. Local Development & Testing
-- Clone the repo and set up your Python environment:
-  ```sh
-  git clone https://github.com/curious-bigcat/snowflake_aws_agentcore.git
-  cd snowflake_aws_agentcore/agentcore
-  python3 -m venv .venv
-  source .venv/bin/activate
-  pip install -r requirements.txt
-  ```
-- Set the secret ARN:
-  ```sh
-  export AGENTCORE_SECRET_NAME=<AgentCoreSecretArn>
-  ```
-- Launch the agent locally:
-  ```sh
-  agentcore launch -l
-  # or
-  python my_new_travel_agent.py
-  ```
-- Run the Streamlit UI:
-  ```sh
-  export AGENT_ENDPOINT="http://localhost:8080/invocations"
-  streamlit run streamlit_coordinator_travel_agent.py
-  ```
+```sql
+CREATE OR REPLACE DATABASE TRAVEL_DB;
+USE DATABASE TRAVEL_DB;
+CREATE OR REPLACE SCHEMA PUBLIC;
 
-### 4. Cloud Deployment: AWS Bedrock AgentCore
-- Configure and launch:
-  ```sh
-  agentcore configure --entrypoint my_new_travel_agent.py -er <YOUR_EXECUTION_ROLE_ARN>
-  agentcore launch
-  ```
-- Update Streamlit to use the cloud endpoint:
-  ```sh
-  export AGENT_ENDPOINT="https://<your-bedrock-agentcore-endpoint>/invocations"
-  streamlit run streamlit_coordinator_travel_agent.py
-  ```
+-- Flights table
+CREATE OR REPLACE TABLE PUBLIC.flight_data (
+    airline STRING,
+    source STRING,
+    destination STRING,
+    price NUMBER,
+    duration NUMBER,
+    total_stops NUMBER,
+    dep_time STRING,
+    arrival_time STRING
+);
+
+-- Hotels table
+CREATE OR REPLACE TABLE PUBLIC.hotel_data (
+    name STRING,
+    city STRING,
+    price NUMBER,
+    rating NUMBER
+);
+```
+
+**b. Load Sample Data**
+- Use the Snowflake UI or SnowSQL to load your sample CSVs:
+
+```sql
+PUT file:///path/to/FLIGHT.csv @%PUBLIC.flight_data;
+COPY INTO PUBLIC.flight_data FROM @%PUBLIC.flight_data FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY='"');
+
+PUT file:///path/to/HOTEL.csv @%PUBLIC.hotel_data;
+COPY INTO PUBLIC.hotel_data FROM @%PUBLIC.hotel_data FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY='"');
+```
+
+### 2. Cortex Analyst Configuration
+
+- Ensure you have access to Snowflake Cortex Analyst (contact your Snowflake admin if unsure).
+- Create or update a semantic model YAML file (e.g., `FLIGHT_ANALYTICS.yaml`) and upload it to a Snowflake stage:
+
+```sql
+CREATE OR REPLACE STAGE PUBLIC.DATA;
+PUT file:///path/to/FLIGHT_ANALYTICS.yaml @PUBLIC.DATA;
+PUT file:///path/to/HOTEL_ANALYTICS.yaml @PUBLIC.DATA;
+```
+- Note the stage path (e.g., `@TRAVEL_DB.PUBLIC.DATA/FLIGHT_ANALYTICS.yaml`) for use in your agent config.
+
+#### Creating or Updating a Semantic View (Semantic Model) in Snowsight
+
+You can create a semantic view using the wizard or by uploading a YAML file:
+
+**A. Using the Wizard**
+- In Snowsight, go to Data » Databases, select your database and schema.
+- Click Create » Semantic View » Create with guided setup.
+- Follow the wizard to select tables, columns, and define facts, dimensions, metrics, and relationships.
+- Save your semantic view.
+
+**B. Uploading a YAML Specification**
+- In Snowsight, go to Data » Databases, select your database and schema.
+- Click Create » Semantic View » Upload YAML file.
+- Select your YAML file and upload it.
+- Choose the database, schema, and stage for the file.
+- Click Upload.
+
+**Editing and Sharing**
+- Edit semantic views from the Semantic views tab in Snowsight or Cortex Analyst.
+- Share access by selecting More options » Share and choosing the appropriate role.
+
+**Best Practices**
+- Use clear, business-friendly names and descriptions.
+- Add representative user questions and synonyms.
+- Test with real business questions and iterate.
+
+### 3. Cortex Search Configuration
+
+- Set up a Cortex Search service in your Snowflake account (requires admin privileges).
+- Create a search index on your travel guide or documentation data:
+
+```sql
+CREATE OR REPLACE TABLE PUBLIC.travel_guides (
+    CHUNK STRING
+);
+-- Load your travel guide data into this table
+-- Then create a search index:
+CREATE OR REPLACE SEARCH INDEX travel_guides_index ON PUBLIC.travel_guides(CHUNK);
+
+-- Register the search service (replace with your actual service name)
+CREATE OR REPLACE CORTEX SEARCH SERVICE TRAVEL_SEARCH_SERVICE ON PUBLIC.travel_guides_index;
+```
+- Note the database, schema, and service name for your agent config.
+
+### 4. AWS Configuration
+
+**a. Secrets Manager**
+- Store your Snowflake credentials and config as a JSON secret:
+
+```json
+{
+  "SNOWFLAKE_ACCOUNT": "your_account",
+  "SNOWFLAKE_USER": "your_user",
+  "SNOWFLAKE_PASSWORD": "your_password",
+  "SNOWFLAKE_DATABASE": "TRAVEL_DB",
+  "SNOWFLAKE_SCHEMA": "PUBLIC",
+  "SNOWFLAKE_WAREHOUSE": "XSMALL_WH",
+  "CORTEX_ANALYTIST_URL": "https://<account>.snowflakecomputing.com/api/v2/cortex/analyst/message",
+  "SEMANTIC_MODEL_FILE": "@TRAVEL_DB.PUBLIC.DATA/FLIGHT_ANALYTICS.yaml",
+  "HOTEL_SEMANTIC_MODEL_FILE": "@TRAVEL_DB.PUBLIC.DATA/HOTEL_ANALYTICS.yaml",
+  "CORTEX_SEARCH_DATABASE": "TRAVEL_DB",
+  "CORTEX_SEARCH_SCHEMA": "PUBLIC",
+  "CORTEX_SEARCH_SERVICE": "TRAVEL_SEARCH_SERVICE"
+}
+```
+- Save the ARN of this secret for use in your environment variables.
+
+**b. IAM Permissions**
+- Ensure your AWS user/role has permissions for Secrets Manager and (if needed) S3.
+
+### 5. CloudFormation Setup (Optional, for IaC)
+
+- Use AWS CloudFormation to automate infrastructure setup (Secrets Manager, IAM roles, etc.).
+- Example CloudFormation snippet for a secret:
+
+```yaml
+Resources:
+  TravelAgentSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: agentcore/travelplanner/credentials
+      SecretString: '{ ... }'  # Your JSON config here
+```
+- Deploy with:
+```sh
+aws cloudformation deploy --template-file your_template.yaml --stack-name travel-agent-stack
+```
+
+### 6. AgentCore Configuration and Launch
+
+- Ensure all environment variables are set (either via AWS Secrets Manager or manually):
+
+```sh
+export AGENTCORE_SECRET_NAME=arn:aws:secretsmanager:us-east-1:xxxx:secret:agentcore/travelplanner/credentials-xxxx
+```
+- Install Python dependencies:
+```sh
+pip install -r requirements.txt
+```
+- Launch the agent:
+```sh
+python my_new_travel_agent.py
+```
+- The agent will start as a service (API or CLI, depending on your configuration).
+
+### 7. Streamlit App Configuration and Launch (Optional UI)
+
+- If you have a Streamlit frontend (e.g., `streamlit_coordinator_travel_agent.py`):
+- Install Streamlit if not already installed:
+```sh
+pip install streamlit
+```
+- Launch the app:
+```sh
+streamlit run streamlit_coordinator_travel_agent.py
+```
+- Configure the app to point to your running agent service (update API endpoint in the Streamlit script if needed).
 
 ---
 
@@ -143,5 +258,7 @@ agentcore/
   - Ensure `AGENTCORE_SECRET_NAME` is set to the correct ARN and IAM permissions are correct.
 - **Snowflake connection errors**
   - Double-check all Snowflake credentials and network access.
+
+---
 
 

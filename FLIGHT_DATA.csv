@@ -1,0 +1,649 @@
+AIRLINE,SOURCE,DESTINATION,NEAREST_AIRPORT_SOURCE,NEAREST_AIRPORT_DESTINATION,IATA_SOURCE,IATA_DESTINATION,ROUTE,DEP_TIME,ARRIVAL_TIME,DURATION,TOTAL_STOPS,ADDITIONAL_INFO,PRICE,DIRECT_CONNECTING
+Singapore Airlines,Singapore,Tokyo,Singapore Changi Airport,Tokyo Haneda Airport,SIN,HND,SIN -> HND,05:00:00.000,12:05:00.000,07:05,0,Business class,51840,Direct
+All Nippon Airways,Singapore,Tokyo,Singapore Changi Airport,Tokyo Haneda Airport,SIN,HND,SIN -> HND,05:45:00.000,12:50:00.000,07:05,0,Business class,50650,Direct
+Japan Airlines,Singapore,Tokyo,Singapore Changi Airport,Tokyo Haneda Airport,SIN,HND,SIN -> HND,06:30:00.000,13:35:00.000,07:05,0,Business class,50900,Direct
+Scoot,Singapore,Tokyo,Singapore Changi Airport,Tokyo Haneda Airport,SIN,HND,SIN -> HND,07:15:00.000,14:20:00.000,07:05,0,In-flight meal not included,29550,Direct
+ZIPAIR Tokyo,Singapore,Tokyo,Singapore Changi Airport,Tokyo Haneda Airport,SIN,HND,SIN -> HND,08:00:00.000,15:05:00.000,07:05,0,In-flight meal not included,35560,Direct
+AirAsia X,Singapore,Tokyo,Singapore Changi Airport,Tokyo Haneda Airport,SIN,HND,SIN -> HND,08:45:00.000,19:00:00.000,10:15,1,1 Long layover,33890,Connecting
+Singapore Airlines,Tokyo,Singapore,Tokyo Haneda Airport,Singapore Changi Airport,HND,SIN,HND -> SIN,05:37:00.000,12:42:00.000,07:05,0,Business class,51840,Direct
+All Nippon Airways,Tokyo,Singapore,Tokyo Haneda Airport,Singapore Changi Airport,HND,SIN,HND -> SIN,06:22:00.000,13:27:00.000,07:05,0,Business class,50650,Direct
+Japan Airlines,Tokyo,Singapore,Tokyo Haneda Airport,Singapore Changi Airport,HND,SIN,HND -> SIN,07:07:00.000,14:12:00.000,07:05,0,Business class,50900,Direct
+Scoot,Tokyo,Singapore,Tokyo Haneda Airport,Singapore Changi Airport,HND,SIN,HND -> SIN,07:52:00.000,14:57:00.000,07:05,0,In-flight meal not included,29550,Direct
+ZIPAIR Tokyo,Tokyo,Singapore,Tokyo Haneda Airport,Singapore Changi Airport,HND,SIN,HND -> SIN,08:37:00.000,15:42:00.000,07:05,0,In-flight meal not included,35560,Direct
+AirAsia X,Tokyo,Singapore,Tokyo Haneda Airport,Singapore Changi Airport,HND,SIN,HND -> SIN,09:22:00.000,19:37:00.000,10:15,1,1 Long layover,33890,Connecting
+Singapore Airlines,Singapore,Seoul,Singapore Changi Airport,Incheon International Airport,SIN,ICN,SIN -> ICN,06:14:00.000,12:44:00.000,06:30,0,Business class,39420,Direct
+Korean Air,Singapore,Seoul,Singapore Changi Airport,Incheon International Airport,SIN,ICN,SIN -> ICN,06:59:00.000,13:29:00.000,06:30,0,Business class,37480,Direct
+Asiana Airlines,Singapore,Seoul,Singapore Changi Airport,Incheon International Airport,SIN,ICN,SIN -> ICN,07:44:00.000,14:14:00.000,06:30,0,No info,34080,Direct
+Scoot,Singapore,Seoul,Singapore Changi Airport,Incheon International Airport,SIN,ICN,SIN -> ICN,08:29:00.000,14:59:00.000,06:30,0,In-flight meal not included,22650,Direct
+T'way Air,Singapore,Seoul,Singapore Changi Airport,Incheon International Airport,SIN,ICN,SIN -> ICN,09:14:00.000,15:44:00.000,06:30,0,In-flight meal not included,24360,Direct
+AirAsia X,Singapore,Seoul,Singapore Changi Airport,Incheon International Airport,SIN,ICN,SIN -> ICN,09:59:00.000,19:39:00.000,09:40,1,1 Long layover,26070,Connecting
+Singapore Airlines,Seoul,Singapore,Incheon International Airport,Singapore Changi Airport,ICN,SIN,ICN -> SIN,06:51:00.000,13:21:00.000,06:30,0,Business class,39420,Direct
+Korean Air,Seoul,Singapore,Incheon International Airport,Singapore Changi Airport,ICN,SIN,ICN -> SIN,07:36:00.000,14:06:00.000,06:30,0,Business class,37480,Direct
+Asiana Airlines,Seoul,Singapore,Incheon International Airport,Singapore Changi Airport,ICN,SIN,ICN -> SIN,08:21:00.000,14:51:00.000,06:30,0,No info,34080,Direct
+Scoot,Seoul,Singapore,Incheon International Airport,Singapore Changi Airport,ICN,SIN,ICN -> SIN,09:06:00.000,15:36:00.000,06:30,0,In-flight meal not included,22650,Direct
+T'way Air,Seoul,Singapore,Incheon International Airport,Singapore Changi Airport,ICN,SIN,ICN -> SIN,09:51:00.000,16:21:00.000,06:30,0,In-flight meal not included,24360,Direct
+AirAsia X,Seoul,Singapore,Incheon International Airport,Singapore Changi Airport,ICN,SIN,ICN -> SIN,10:36:00.000,20:16:00.000,09:40,1,1 Long layover,26070,Connecting
+Singapore Airlines,Singapore,Sydney,Singapore Changi Airport,Sydney Kingsford Smith Airport,SIN,SYD,SIN -> SYD,07:28:00.000,15:18:00.000,07:50,0,Business class,56160,Direct
+Qantas Airways,Singapore,Sydney,Singapore Changi Airport,Sydney Kingsford Smith Airport,SIN,SYD,SIN -> SYD,08:13:00.000,16:03:00.000,07:50,0,Business class,52250,Direct
+Virgin Australia,Singapore,Sydney,Singapore Changi Airport,Sydney Kingsford Smith Airport,SIN,SYD,SIN -> SYD,08:58:00.000,16:48:00.000,07:50,0,No info,47300,Direct
+Jetstar Airways,Singapore,Sydney,Singapore Changi Airport,Sydney Kingsford Smith Airport,SIN,SYD,SIN -> SYD,09:43:00.000,17:33:00.000,07:50,0,In-flight meal not included,32990,Direct
+Scoot,Singapore,Sydney,Singapore Changi Airport,Sydney Kingsford Smith Airport,SIN,SYD,SIN -> SYD,10:28:00.000,18:18:00.000,07:50,0,In-flight meal not included,32200,Direct
+AirAsia X,Singapore,Sydney,Singapore Changi Airport,Sydney Kingsford Smith Airport,SIN,SYD,SIN -> SYD,11:13:00.000,22:13:00.000,11:00,1,1 Long layover,36610,Connecting
+Singapore Airlines,Sydney,Singapore,Sydney Kingsford Smith Airport,Singapore Changi Airport,SYD,SIN,SYD -> SIN,08:05:00.000,15:55:00.000,07:50,0,Business class,56160,Direct
+Qantas Airways,Sydney,Singapore,Sydney Kingsford Smith Airport,Singapore Changi Airport,SYD,SIN,SYD -> SIN,08:50:00.000,16:40:00.000,07:50,0,Business class,52250,Direct
+Virgin Australia,Sydney,Singapore,Sydney Kingsford Smith Airport,Singapore Changi Airport,SYD,SIN,SYD -> SIN,09:35:00.000,17:25:00.000,07:50,0,No info,47300,Direct
+Jetstar Airways,Sydney,Singapore,Sydney Kingsford Smith Airport,Singapore Changi Airport,SYD,SIN,SYD -> SIN,10:20:00.000,18:10:00.000,07:50,0,In-flight meal not included,32990,Direct
+Scoot,Sydney,Singapore,Sydney Kingsford Smith Airport,Singapore Changi Airport,SYD,SIN,SYD -> SIN,11:05:00.000,18:55:00.000,07:50,0,In-flight meal not included,32200,Direct
+AirAsia X,Sydney,Singapore,Sydney Kingsford Smith Airport,Singapore Changi Airport,SYD,SIN,SYD -> SIN,11:50:00.000,22:50:00.000,11:00,1,1 Long layover,36610,Connecting
+Singapore Airlines,Singapore,Melbourne,Singapore Changi Airport,Melbourne Tullamarine Airport,SIN,MEL,SIN -> MEL,08:42:00.000,16:22:00.000,07:40,0,Business class,55080,Direct
+Qantas Airways,Singapore,Melbourne,Singapore Changi Airport,Melbourne Tullamarine Airport,SIN,MEL,SIN -> MEL,09:27:00.000,17:07:00.000,07:40,0,Business class,51250,Direct
+Virgin Australia,Singapore,Melbourne,Singapore Changi Airport,Melbourne Tullamarine Airport,SIN,MEL,SIN -> MEL,10:12:00.000,17:52:00.000,07:40,0,No info,46400,Direct
+Jetstar Airways,Singapore,Melbourne,Singapore Changi Airport,Melbourne Tullamarine Airport,SIN,MEL,SIN -> MEL,10:57:00.000,18:37:00.000,07:40,0,In-flight meal not included,32370,Direct
+Scoot,Singapore,Melbourne,Singapore Changi Airport,Melbourne Tullamarine Airport,SIN,MEL,SIN -> MEL,11:42:00.000,19:22:00.000,07:40,0,In-flight meal not included,31600,Direct
+AirAsia X,Singapore,Melbourne,Singapore Changi Airport,Melbourne Tullamarine Airport,SIN,MEL,SIN -> MEL,12:27:00.000,23:17:00.000,10:50,1,1 Long layover,35930,Connecting
+Singapore Airlines,Melbourne,Singapore,Melbourne Tullamarine Airport,Singapore Changi Airport,MEL,SIN,MEL -> SIN,09:19:00.000,16:59:00.000,07:40,0,Business class,55080,Direct
+Qantas Airways,Melbourne,Singapore,Melbourne Tullamarine Airport,Singapore Changi Airport,MEL,SIN,MEL -> SIN,10:04:00.000,17:44:00.000,07:40,0,Business class,51250,Direct
+Virgin Australia,Melbourne,Singapore,Melbourne Tullamarine Airport,Singapore Changi Airport,MEL,SIN,MEL -> SIN,10:49:00.000,18:29:00.000,07:40,0,No info,46400,Direct
+Jetstar Airways,Melbourne,Singapore,Melbourne Tullamarine Airport,Singapore Changi Airport,MEL,SIN,MEL -> SIN,11:34:00.000,19:14:00.000,07:40,0,In-flight meal not included,32370,Direct
+Scoot,Melbourne,Singapore,Melbourne Tullamarine Airport,Singapore Changi Airport,MEL,SIN,MEL -> SIN,12:19:00.000,19:59:00.000,07:40,0,In-flight meal not included,31600,Direct
+AirAsia X,Melbourne,Singapore,Melbourne Tullamarine Airport,Singapore Changi Airport,MEL,SIN,MEL -> SIN,13:04:00.000,23:54:00.000,10:50,1,1 Long layover,35930,Connecting
+Singapore Airlines,Singapore,Brisbane,Singapore Changi Airport,Brisbane Airport,SIN,BNE,SIN -> BNE,09:56:00.000,17:56:00.000,08:00,0,Business class,53460,Direct
+Qantas Airways,Singapore,Brisbane,Singapore Changi Airport,Brisbane Airport,SIN,BNE,SIN -> BNE,10:41:00.000,18:41:00.000,08:00,0,Business class,49750,Direct
+Virgin Australia,Singapore,Brisbane,Singapore Changi Airport,Brisbane Airport,SIN,BNE,SIN -> BNE,11:26:00.000,19:26:00.000,08:00,0,No info,45050,Direct
+Jetstar Airways,Singapore,Brisbane,Singapore Changi Airport,Brisbane Airport,SIN,BNE,SIN -> BNE,12:11:00.000,20:11:00.000,08:00,0,In-flight meal not included,31440,Direct
+Scoot,Singapore,Brisbane,Singapore Changi Airport,Brisbane Airport,SIN,BNE,SIN -> BNE,12:56:00.000,20:56:00.000,08:00,0,In-flight meal not included,30700,Direct
+AirAsia X,Singapore,Brisbane,Singapore Changi Airport,Brisbane Airport,SIN,BNE,SIN -> BNE,13:41:00.000,00:51:00.000,11:10,1,1 Long layover,34910,Connecting
+Singapore Airlines,Brisbane,Singapore,Brisbane Airport,Singapore Changi Airport,BNE,SIN,BNE -> SIN,10:33:00.000,18:33:00.000,08:00,0,Business class,53460,Direct
+Qantas Airways,Brisbane,Singapore,Brisbane Airport,Singapore Changi Airport,BNE,SIN,BNE -> SIN,11:18:00.000,19:18:00.000,08:00,0,Business class,49750,Direct
+Virgin Australia,Brisbane,Singapore,Brisbane Airport,Singapore Changi Airport,BNE,SIN,BNE -> SIN,12:03:00.000,20:03:00.000,08:00,0,No info,45050,Direct
+Jetstar Airways,Brisbane,Singapore,Brisbane Airport,Singapore Changi Airport,BNE,SIN,BNE -> SIN,12:48:00.000,20:48:00.000,08:00,0,In-flight meal not included,31440,Direct
+Scoot,Brisbane,Singapore,Brisbane Airport,Singapore Changi Airport,BNE,SIN,BNE -> SIN,13:33:00.000,21:33:00.000,08:00,0,In-flight meal not included,30700,Direct
+AirAsia X,Brisbane,Singapore,Brisbane Airport,Singapore Changi Airport,BNE,SIN,BNE -> SIN,14:18:00.000,01:28:00.000,11:10,1,1 Long layover,34910,Connecting
+Singapore Airlines,Singapore,Perth,Singapore Changi Airport,Perth Airport,SIN,PER,SIN -> PER,11:10:00.000,16:20:00.000,05:10,0,Business class,30780,Direct
+Qantas Airways,Singapore,Perth,Singapore Changi Airport,Perth Airport,SIN,PER,SIN -> PER,11:55:00.000,17:05:00.000,05:10,0,Business class,28750,Direct
+Virgin Australia,Singapore,Perth,Singapore Changi Airport,Perth Airport,SIN,PER,SIN -> PER,12:40:00.000,17:50:00.000,05:10,0,No info,26150,Direct
+Jetstar Airways,Singapore,Perth,Singapore Changi Airport,Perth Airport,SIN,PER,SIN -> PER,13:25:00.000,18:35:00.000,05:10,0,In-flight meal not included,18420,Direct
+Scoot,Singapore,Perth,Singapore Changi Airport,Perth Airport,SIN,PER,SIN -> PER,14:10:00.000,19:20:00.000,05:10,0,In-flight meal not included,18100,Direct
+Singapore Airlines,Perth,Singapore,Perth Airport,Singapore Changi Airport,PER,SIN,PER -> SIN,11:47:00.000,16:57:00.000,05:10,0,Business class,30780,Direct
+Qantas Airways,Perth,Singapore,Perth Airport,Singapore Changi Airport,PER,SIN,PER -> SIN,12:32:00.000,17:42:00.000,05:10,0,Business class,28750,Direct
+Virgin Australia,Perth,Singapore,Perth Airport,Singapore Changi Airport,PER,SIN,PER -> SIN,13:17:00.000,18:27:00.000,05:10,0,No info,26150,Direct
+Jetstar Airways,Perth,Singapore,Perth Airport,Singapore Changi Airport,PER,SIN,PER -> SIN,14:02:00.000,19:12:00.000,05:10,0,In-flight meal not included,18420,Direct
+Scoot,Perth,Singapore,Perth Airport,Singapore Changi Airport,PER,SIN,PER -> SIN,14:47:00.000,19:57:00.000,05:10,0,In-flight meal not included,18100,Direct
+Singapore Airlines,Singapore,Auckland,Singapore Changi Airport,Auckland Airport,SIN,AKL,SIN -> AKL,12:24:00.000,22:14:00.000,09:50,0,Business class,60480,Direct
+Air New Zealand,Singapore,Auckland,Singapore Changi Airport,Auckland Airport,SIN,AKL,SIN -> AKL,13:09:00.000,22:59:00.000,09:50,0,Business class,56250,Direct
+Qantas Airways,Singapore,Auckland,Singapore Changi Airport,Auckland Airport,SIN,AKL,SIN -> AKL,13:54:00.000,23:44:00.000,09:50,0,Business class,56500,Direct
+Jetstar Airways,Singapore,Auckland,Singapore Changi Airport,Auckland Airport,SIN,AKL,SIN -> AKL,14:39:00.000,00:29:00.000,09:50,0,In-flight meal not included,35470,Direct
+Scoot,Singapore,Auckland,Singapore Changi Airport,Auckland Airport,SIN,AKL,SIN -> AKL,15:24:00.000,01:14:00.000,09:50,0,In-flight meal not included,34600,Direct
+Singapore Airlines,Auckland,Singapore,Auckland Airport,Singapore Changi Airport,AKL,SIN,AKL -> SIN,13:01:00.000,22:51:00.000,09:50,0,Business class,60480,Direct
+Air New Zealand,Auckland,Singapore,Auckland Airport,Singapore Changi Airport,AKL,SIN,AKL -> SIN,13:46:00.000,23:36:00.000,09:50,0,Business class,56250,Direct
+Qantas Airways,Auckland,Singapore,Auckland Airport,Singapore Changi Airport,AKL,SIN,AKL -> SIN,14:31:00.000,00:21:00.000,09:50,0,Business class,56500,Direct
+Jetstar Airways,Auckland,Singapore,Auckland Airport,Singapore Changi Airport,AKL,SIN,AKL -> SIN,15:16:00.000,01:06:00.000,09:50,0,In-flight meal not included,35470,Direct
+Scoot,Auckland,Singapore,Auckland Airport,Singapore Changi Airport,AKL,SIN,AKL -> SIN,16:01:00.000,01:51:00.000,09:50,0,In-flight meal not included,34600,Direct
+Singapore Airlines,Singapore,Osaka,Singapore Changi Airport,Kansai International Airport,SIN,KIX,SIN -> KIX,13:38:00.000,20:13:00.000,06:35,0,Business class,45360,Direct
+All Nippon Airways,Singapore,Osaka,Singapore Changi Airport,Kansai International Airport,SIN,KIX,SIN -> KIX,14:23:00.000,20:58:00.000,06:35,0,Business class,44350,Direct
+Japan Airlines,Singapore,Osaka,Singapore Changi Airport,Kansai International Airport,SIN,KIX,SIN -> KIX,15:08:00.000,21:43:00.000,06:35,0,Business class,44600,Direct
+Scoot,Singapore,Osaka,Singapore Changi Airport,Kansai International Airport,SIN,KIX,SIN -> KIX,15:53:00.000,22:28:00.000,06:35,0,In-flight meal not included,25950,Direct
+Peach Aviation,Singapore,Osaka,Singapore Changi Airport,Kansai International Airport,SIN,KIX,SIN -> KIX,16:38:00.000,23:13:00.000,06:35,0,No info,28720,Direct
+ZIPAIR Tokyo,Singapore,Osaka,Singapore Changi Airport,Kansai International Airport,SIN,KIX,SIN -> KIX,17:23:00.000,23:58:00.000,06:35,0,In-flight meal not included,31490,Direct
+Singapore Airlines,Osaka,Singapore,Kansai International Airport,Singapore Changi Airport,KIX,SIN,KIX -> SIN,14:15:00.000,20:50:00.000,06:35,0,Business class,45360,Direct
+All Nippon Airways,Osaka,Singapore,Kansai International Airport,Singapore Changi Airport,KIX,SIN,KIX -> SIN,15:00:00.000,21:35:00.000,06:35,0,Business class,44350,Direct
+Japan Airlines,Osaka,Singapore,Kansai International Airport,Singapore Changi Airport,KIX,SIN,KIX -> SIN,15:45:00.000,22:20:00.000,06:35,0,Business class,44600,Direct
+Scoot,Osaka,Singapore,Kansai International Airport,Singapore Changi Airport,KIX,SIN,KIX -> SIN,16:30:00.000,23:05:00.000,06:35,0,In-flight meal not included,25950,Direct
+Peach Aviation,Osaka,Singapore,Kansai International Airport,Singapore Changi Airport,KIX,SIN,KIX -> SIN,17:15:00.000,23:50:00.000,06:35,0,No info,28720,Direct
+ZIPAIR Tokyo,Osaka,Singapore,Kansai International Airport,Singapore Changi Airport,KIX,SIN,KIX -> SIN,18:00:00.000,00:35:00.000,06:35,0,In-flight meal not included,31490,Direct
+Singapore Airlines,Singapore,Hong Kong,Singapore Changi Airport,Hong Kong International Airport,SIN,HKG,SIN -> HKG,14:52:00.000,18:47:00.000,03:55,0,Business class,25920,Direct
+Cathay Pacific,Singapore,Hong Kong,Singapore Changi Airport,Hong Kong International Airport,SIN,HKG,SIN -> HKG,15:37:00.000,19:32:00.000,03:55,0,Business class,24250,Direct
+HK Express,Singapore,Hong Kong,Singapore Changi Airport,Hong Kong International Airport,SIN,HKG,SIN -> HKG,16:22:00.000,20:17:00.000,03:55,0,No info,16100,Direct
+Scoot,Singapore,Hong Kong,Singapore Changi Airport,Hong Kong International Airport,SIN,HKG,SIN -> HKG,17:07:00.000,21:02:00.000,03:55,0,In-flight meal not included,15150,Direct
+Jetstar Asia,Singapore,Hong Kong,Singapore Changi Airport,Hong Kong International Airport,SIN,HKG,SIN -> HKG,17:52:00.000,21:47:00.000,03:55,0,In-flight meal not included,14919,Direct
+Hong Kong Airlines,Singapore,Hong Kong,Singapore Changi Airport,Hong Kong International Airport,SIN,HKG,SIN -> HKG,18:37:00.000,22:32:00.000,03:55,0,No info,19970,Direct
+Singapore Airlines,Hong Kong,Singapore,Hong Kong International Airport,Singapore Changi Airport,HKG,SIN,HKG -> SIN,15:29:00.000,19:24:00.000,03:55,0,Business class,25920,Direct
+Cathay Pacific,Hong Kong,Singapore,Hong Kong International Airport,Singapore Changi Airport,HKG,SIN,HKG -> SIN,16:14:00.000,20:09:00.000,03:55,0,Business class,24250,Direct
+HK Express,Hong Kong,Singapore,Hong Kong International Airport,Singapore Changi Airport,HKG,SIN,HKG -> SIN,16:59:00.000,20:54:00.000,03:55,0,No info,16100,Direct
+Scoot,Hong Kong,Singapore,Hong Kong International Airport,Singapore Changi Airport,HKG,SIN,HKG -> SIN,17:44:00.000,21:39:00.000,03:55,0,In-flight meal not included,15150,Direct
+Jetstar Asia,Hong Kong,Singapore,Hong Kong International Airport,Singapore Changi Airport,HKG,SIN,HKG -> SIN,18:29:00.000,22:24:00.000,03:55,0,In-flight meal not included,14919,Direct
+Hong Kong Airlines,Hong Kong,Singapore,Hong Kong International Airport,Singapore Changi Airport,HKG,SIN,HKG -> SIN,19:14:00.000,23:09:00.000,03:55,0,No info,19970,Direct
+Singapore Airlines,Singapore,Bangkok,Singapore Changi Airport,Suvarnabhumi Airport,SIN,BKK,SIN -> BKK,16:06:00.000,18:26:00.000,02:20,0,Business class,10260,Direct
+Thai Airways,Singapore,Bangkok,Singapore Changi Airport,Suvarnabhumi Airport,SIN,BKK,SIN -> BKK,16:51:00.000,19:11:00.000,02:20,0,Business class,9180,Direct
+Thai AirAsia X,Singapore,Bangkok,Singapore Changi Airport,Suvarnabhumi Airport,SIN,BKK,SIN -> BKK,17:36:00.000,22:46:00.000,05:10,1,In-flight meal not included,6200,Connecting
+Scoot,Singapore,Bangkok,Singapore Changi Airport,Suvarnabhumi Airport,SIN,BKK,SIN -> BKK,18:21:00.000,20:41:00.000,02:20,0,In-flight meal not included,6450,Direct
+AirAsia,Singapore,Bangkok,Singapore Changi Airport,Suvarnabhumi Airport,SIN,BKK,SIN -> BKK,19:06:00.000,21:26:00.000,02:20,0,In-flight meal not included,6225,Direct
+VietJet Air,Singapore,Bangkok,Singapore Changi Airport,Suvarnabhumi Airport,SIN,BKK,SIN -> BKK,19:51:00.000,22:11:00.000,02:20,0,In-flight meal not included,6664,Direct
+Singapore Airlines,Bangkok,Singapore,Suvarnabhumi Airport,Singapore Changi Airport,BKK,SIN,BKK -> SIN,16:43:00.000,19:03:00.000,02:20,0,Business class,10260,Direct
+Thai Airways,Bangkok,Singapore,Suvarnabhumi Airport,Singapore Changi Airport,BKK,SIN,BKK -> SIN,17:28:00.000,19:48:00.000,02:20,0,Business class,9180,Direct
+Thai AirAsia X,Bangkok,Singapore,Suvarnabhumi Airport,Singapore Changi Airport,BKK,SIN,BKK -> SIN,18:13:00.000,23:23:00.000,05:10,1,In-flight meal not included,6200,Connecting
+Scoot,Bangkok,Singapore,Suvarnabhumi Airport,Singapore Changi Airport,BKK,SIN,BKK -> SIN,18:58:00.000,21:18:00.000,02:20,0,In-flight meal not included,6450,Direct
+AirAsia,Bangkok,Singapore,Suvarnabhumi Airport,Singapore Changi Airport,BKK,SIN,BKK -> SIN,19:43:00.000,22:03:00.000,02:20,0,In-flight meal not included,6225,Direct
+VietJet Air,Bangkok,Singapore,Suvarnabhumi Airport,Singapore Changi Airport,BKK,SIN,BKK -> SIN,20:28:00.000,22:48:00.000,02:20,0,In-flight meal not included,6664,Direct
+Singapore Airlines,Singapore,Kuala Lumpur,Singapore Changi Airport,Kuala Lumpur International Airport,SIN,KUL,SIN -> KUL,17:20:00.000,18:25:00.000,01:05,0,Business class,4320,Direct
+Malaysia Airlines,Singapore,Kuala Lumpur,Singapore Changi Airport,Kuala Lumpur International Airport,SIN,KUL,SIN -> KUL,18:05:00.000,19:10:00.000,01:05,0,No info,3690,Direct
+AirAsia,Singapore,Kuala Lumpur,Singapore Changi Airport,Kuala Lumpur International Airport,SIN,KUL,SIN -> KUL,18:50:00.000,19:55:00.000,01:05,0,In-flight meal not included,2700,Direct
+Scoot,Singapore,Kuala Lumpur,Singapore Changi Airport,Kuala Lumpur International Airport,SIN,KUL,SIN -> KUL,19:35:00.000,20:40:00.000,01:05,0,In-flight meal not included,3150,Direct
+Batik Air,Singapore,Kuala Lumpur,Singapore Changi Airport,Kuala Lumpur International Airport,SIN,KUL,SIN -> KUL,20:20:00.000,21:25:00.000,01:05,0,No info,4200,Direct
+Singapore Airlines,Kuala Lumpur,Singapore,Kuala Lumpur International Airport,Singapore Changi Airport,KUL,SIN,KUL -> SIN,17:57:00.000,19:02:00.000,01:05,0,Business class,4320,Direct
+Malaysia Airlines,Kuala Lumpur,Singapore,Kuala Lumpur International Airport,Singapore Changi Airport,KUL,SIN,KUL -> SIN,18:42:00.000,19:47:00.000,01:05,0,No info,3690,Direct
+AirAsia,Kuala Lumpur,Singapore,Kuala Lumpur International Airport,Singapore Changi Airport,KUL,SIN,KUL -> SIN,19:27:00.000,20:32:00.000,01:05,0,In-flight meal not included,2700,Direct
+Scoot,Kuala Lumpur,Singapore,Kuala Lumpur International Airport,Singapore Changi Airport,KUL,SIN,KUL -> SIN,20:12:00.000,21:17:00.000,01:05,0,In-flight meal not included,3150,Direct
+Batik Air,Kuala Lumpur,Singapore,Kuala Lumpur International Airport,Singapore Changi Airport,KUL,SIN,KUL -> SIN,20:57:00.000,22:02:00.000,01:05,0,No info,4200,Direct
+Singapore Airlines,Singapore,Jakarta,Singapore Changi Airport,Soekarno-Hatta International Airport,SIN,CGK,SIN -> CGK,18:34:00.000,20:29:00.000,01:55,0,Business class,16200,Direct
+Garuda Indonesia,Singapore,Jakarta,Singapore Changi Airport,Soekarno-Hatta International Airport,SIN,CGK,SIN -> CGK,19:19:00.000,21:14:00.000,01:55,0,Business class,14050,Direct
+Batik Air,Singapore,Jakarta,Singapore Changi Airport,Soekarno-Hatta International Airport,SIN,CGK,SIN -> CGK,20:04:00.000,21:59:00.000,01:55,0,No info,12500,Direct
+Scoot,Singapore,Jakarta,Singapore Changi Airport,Soekarno-Hatta International Airport,SIN,CGK,SIN -> CGK,20:49:00.000,22:44:00.000,01:55,0,In-flight meal not included,9750,Direct
+AirAsia,Singapore,Jakarta,Singapore Changi Airport,Soekarno-Hatta International Airport,SIN,CGK,SIN -> CGK,21:34:00.000,23:29:00.000,01:55,0,In-flight meal not included,9250,Direct
+Singapore Airlines,Jakarta,Singapore,Soekarno-Hatta International Airport,Singapore Changi Airport,CGK,SIN,CGK -> SIN,19:11:00.000,21:06:00.000,01:55,0,Business class,16200,Direct
+Garuda Indonesia,Jakarta,Singapore,Soekarno-Hatta International Airport,Singapore Changi Airport,CGK,SIN,CGK -> SIN,19:56:00.000,21:51:00.000,01:55,0,Business class,14050,Direct
+Batik Air,Jakarta,Singapore,Soekarno-Hatta International Airport,Singapore Changi Airport,CGK,SIN,CGK -> SIN,20:41:00.000,22:36:00.000,01:55,0,No info,12500,Direct
+Scoot,Jakarta,Singapore,Soekarno-Hatta International Airport,Singapore Changi Airport,CGK,SIN,CGK -> SIN,21:26:00.000,23:21:00.000,01:55,0,In-flight meal not included,9750,Direct
+AirAsia,Jakarta,Singapore,Soekarno-Hatta International Airport,Singapore Changi Airport,CGK,SIN,CGK -> SIN,22:11:00.000,00:06:00.000,01:55,0,In-flight meal not included,9250,Direct
+Singapore Airlines,Singapore,Manila,Singapore Changi Airport,Ninoy Aquino International Airport,SIN,MNL,SIN -> MNL,19:48:00.000,23:33:00.000,03:45,0,Business class,23760,Direct
+Philippine Airlines,Singapore,Manila,Singapore Changi Airport,Ninoy Aquino International Airport,SIN,MNL,SIN -> MNL,20:33:00.000,00:18:00.000,03:45,0,Business class,19610,Direct
+Cebu Pacific,Singapore,Manila,Singapore Changi Airport,Ninoy Aquino International Airport,SIN,MNL,SIN -> MNL,21:18:00.000,01:03:00.000,03:45,0,In-flight meal not included,12600,Direct
+Scoot,Singapore,Manila,Singapore Changi Airport,Ninoy Aquino International Airport,SIN,MNL,SIN -> MNL,22:03:00.000,01:48:00.000,03:45,0,In-flight meal not included,13950,Direct
+Jetstar Asia,Singapore,Manila,Singapore Changi Airport,Ninoy Aquino International Airport,SIN,MNL,SIN -> MNL,22:48:00.000,02:33:00.000,03:45,0,In-flight meal not included,13760,Direct
+Singapore Airlines,Manila,Singapore,Ninoy Aquino International Airport,Singapore Changi Airport,MNL,SIN,MNL -> SIN,20:25:00.000,00:10:00.000,03:45,0,Business class,23760,Direct
+Philippine Airlines,Manila,Singapore,Ninoy Aquino International Airport,Singapore Changi Airport,MNL,SIN,MNL -> SIN,21:10:00.000,00:55:00.000,03:45,0,Business class,19610,Direct
+Cebu Pacific,Manila,Singapore,Ninoy Aquino International Airport,Singapore Changi Airport,MNL,SIN,MNL -> SIN,21:55:00.000,01:40:00.000,03:45,0,In-flight meal not included,12600,Direct
+Scoot,Manila,Singapore,Ninoy Aquino International Airport,Singapore Changi Airport,MNL,SIN,MNL -> SIN,22:40:00.000,02:25:00.000,03:45,0,In-flight meal not included,13950,Direct
+Jetstar Asia,Manila,Singapore,Ninoy Aquino International Airport,Singapore Changi Airport,MNL,SIN,MNL -> SIN,23:25:00.000,03:10:00.000,03:45,0,In-flight meal not included,13760,Direct
+Singapore Airlines,Singapore,Ho Chi Minh City,Singapore Changi Airport,Tan Son Nhat International Airport,SIN,SGN,SIN -> SGN,21:02:00.000,23:12:00.000,02:10,0,Business class,16200,Direct
+Vietnam Airlines,Singapore,Ho Chi Minh City,Singapore Changi Airport,Tan Son Nhat International Airport,SIN,SGN,SIN -> SGN,21:47:00.000,23:57:00.000,02:10,0,No info,13000,Direct
+VietJet Air,Singapore,Ho Chi Minh City,Singapore Changi Airport,Tan Son Nhat International Airport,SIN,SGN,SIN -> SGN,22:32:00.000,00:42:00.000,02:10,0,In-flight meal not included,9050,Direct
+Scoot,Singapore,Ho Chi Minh City,Singapore Changi Airport,Tan Son Nhat International Airport,SIN,SGN,SIN -> SGN,23:17:00.000,01:27:00.000,02:10,0,In-flight meal not included,9750,Direct
+Jetstar Asia,Singapore,Ho Chi Minh City,Singapore Changi Airport,Tan Son Nhat International Airport,SIN,SGN,SIN -> SGN,00:02:00.000,02:12:00.000,02:10,0,In-flight meal not included,9700,Direct
+Bamboo Airways,Singapore,Ho Chi Minh City,Singapore Changi Airport,Tan Son Nhat International Airport,SIN,SGN,SIN -> SGN,00:47:00.000,02:57:00.000,02:10,0,No info,13700,Direct
+Singapore Airlines,Ho Chi Minh City,Singapore,Tan Son Nhat International Airport,Singapore Changi Airport,SGN,SIN,SGN -> SIN,21:39:00.000,23:49:00.000,02:10,0,Business class,16200,Direct
+Vietnam Airlines,Ho Chi Minh City,Singapore,Tan Son Nhat International Airport,Singapore Changi Airport,SGN,SIN,SGN -> SIN,22:24:00.000,00:34:00.000,02:10,0,No info,13000,Direct
+VietJet Air,Ho Chi Minh City,Singapore,Tan Son Nhat International Airport,Singapore Changi Airport,SGN,SIN,SGN -> SIN,23:09:00.000,01:19:00.000,02:10,0,In-flight meal not included,9050,Direct
+Scoot,Ho Chi Minh City,Singapore,Tan Son Nhat International Airport,Singapore Changi Airport,SGN,SIN,SGN -> SIN,23:54:00.000,02:04:00.000,02:10,0,In-flight meal not included,9750,Direct
+Jetstar Asia,Ho Chi Minh City,Singapore,Tan Son Nhat International Airport,Singapore Changi Airport,SGN,SIN,SGN -> SIN,00:39:00.000,02:49:00.000,02:10,0,In-flight meal not included,9700,Direct
+Bamboo Airways,Ho Chi Minh City,Singapore,Tan Son Nhat International Airport,Singapore Changi Airport,SGN,SIN,SGN -> SIN,01:24:00.000,03:34:00.000,02:10,0,No info,13700,Direct
+Singapore Airlines,Singapore,Hanoi,Singapore Changi Airport,Noi Bai International Airport,SIN,HAN,SIN -> HAN,22:16:00.000,01:46:00.000,03:30,0,Business class,22140,Direct
+Vietnam Airlines,Singapore,Hanoi,Singapore Changi Airport,Noi Bai International Airport,SIN,HAN,SIN -> HAN,23:01:00.000,02:31:00.000,03:30,0,No info,17675,Direct
+Bamboo Airways,Singapore,Hanoi,Singapore Changi Airport,Noi Bai International Airport,SIN,HAN,SIN -> HAN,23:46:00.000,03:16:00.000,03:30,0,No info,17515,Direct
+VietJet Air,Singapore,Hanoi,Singapore Changi Airport,Noi Bai International Airport,SIN,HAN,SIN -> HAN,00:31:00.000,04:01:00.000,03:30,0,In-flight meal not included,12434,Direct
+Scoot,Singapore,Hanoi,Singapore Changi Airport,Noi Bai International Airport,SIN,HAN,SIN -> HAN,01:16:00.000,04:46:00.000,03:30,0,In-flight meal not included,13300,Direct
+Singapore Airlines,Hanoi,Singapore,Noi Bai International Airport,Singapore Changi Airport,HAN,SIN,HAN -> SIN,22:53:00.000,02:23:00.000,03:30,0,Business class,22140,Direct
+Vietnam Airlines,Hanoi,Singapore,Noi Bai International Airport,Singapore Changi Airport,HAN,SIN,HAN -> SIN,23:38:00.000,03:08:00.000,03:30,0,No info,17675,Direct
+Bamboo Airways,Hanoi,Singapore,Noi Bai International Airport,Singapore Changi Airport,HAN,SIN,HAN -> SIN,00:23:00.000,03:53:00.000,03:30,0,No info,17515,Direct
+VietJet Air,Hanoi,Singapore,Noi Bai International Airport,Singapore Changi Airport,HAN,SIN,HAN -> SIN,01:08:00.000,04:38:00.000,03:30,0,In-flight meal not included,12434,Direct
+Scoot,Hanoi,Singapore,Noi Bai International Airport,Singapore Changi Airport,HAN,SIN,HAN -> SIN,01:53:00.000,05:23:00.000,03:30,0,In-flight meal not included,13300,Direct
+Singapore Airlines,Singapore,Delhi,Singapore Changi Airport,Indira Gandhi International Airport,SIN,DEL,SIN -> DEL,23:30:00.000,05:20:00.000,05:50,0,Business class,34560,Direct
+Air India,Singapore,Delhi,Singapore Changi Airport,Indira Gandhi International Airport,SIN,DEL,SIN -> DEL,00:15:00.000,06:05:00.000,05:50,0,No info,26490,Direct
+Vistara,Singapore,Delhi,Singapore Changi Airport,Indira Gandhi International Airport,SIN,DEL,SIN -> DEL,01:00:00.000,06:50:00.000,05:50,0,Business class,29300,Direct
+IndiGo,Singapore,Delhi,Singapore Changi Airport,Indira Gandhi International Airport,SIN,DEL,SIN -> DEL,01:45:00.000,07:35:00.000,05:50,0,In-flight meal not included,19310,Direct
+Scoot,Singapore,Delhi,Singapore Changi Airport,Indira Gandhi International Airport,SIN,DEL,SIN -> DEL,02:30:00.000,08:20:00.000,05:50,0,In-flight meal not included,20200,Direct
+SriLankan Airlines,Singapore,Delhi,Singapore Changi Airport,Indira Gandhi International Airport,SIN,DEL,SIN -> DEL,03:15:00.000,12:10:00.000,08:55,1,1 Long layover,27490,Connecting
+Singapore Airlines,Delhi,Singapore,Indira Gandhi International Airport,Singapore Changi Airport,DEL,SIN,DEL -> SIN,00:07:00.000,05:57:00.000,05:50,0,Business class,34560,Direct
+Air India,Delhi,Singapore,Indira Gandhi International Airport,Singapore Changi Airport,DEL,SIN,DEL -> SIN,00:52:00.000,06:42:00.000,05:50,0,No info,26490,Direct
+Vistara,Delhi,Singapore,Indira Gandhi International Airport,Singapore Changi Airport,DEL,SIN,DEL -> SIN,01:37:00.000,07:27:00.000,05:50,0,Business class,29300,Direct
+IndiGo,Delhi,Singapore,Indira Gandhi International Airport,Singapore Changi Airport,DEL,SIN,DEL -> SIN,02:22:00.000,08:12:00.000,05:50,0,In-flight meal not included,19310,Direct
+Scoot,Delhi,Singapore,Indira Gandhi International Airport,Singapore Changi Airport,DEL,SIN,DEL -> SIN,03:07:00.000,08:57:00.000,05:50,0,In-flight meal not included,20200,Direct
+SriLankan Airlines,Delhi,Singapore,Indira Gandhi International Airport,Singapore Changi Airport,DEL,SIN,DEL -> SIN,03:52:00.000,12:47:00.000,08:55,1,1 Long layover,27490,Connecting
+Singapore Airlines,Singapore,Mumbai,Singapore Changi Airport,Chhatrapati Shivaji Maharaj International Airport,SIN,BOM,SIN -> BOM,00:44:00.000,06:14:00.000,05:30,0,Business class,32940,Direct
+Air India,Singapore,Mumbai,Singapore Changi Airport,Chhatrapati Shivaji Maharaj International Airport,SIN,BOM,SIN -> BOM,01:29:00.000,06:59:00.000,05:30,0,No info,25260,Direct
+Vistara,Singapore,Mumbai,Singapore Changi Airport,Chhatrapati Shivaji Maharaj International Airport,SIN,BOM,SIN -> BOM,02:14:00.000,07:44:00.000,05:30,0,Business class,27950,Direct
+IndiGo,Singapore,Mumbai,Singapore Changi Airport,Chhatrapati Shivaji Maharaj International Airport,SIN,BOM,SIN -> BOM,02:59:00.000,08:29:00.000,05:30,0,In-flight meal not included,18440,Direct
+Scoot,Singapore,Mumbai,Singapore Changi Airport,Chhatrapati Shivaji Maharaj International Airport,SIN,BOM,SIN -> BOM,03:44:00.000,09:14:00.000,05:30,0,In-flight meal not included,19300,Direct
+Singapore Airlines,Mumbai,Singapore,Chhatrapati Shivaji Maharaj International Airport,Singapore Changi Airport,BOM,SIN,BOM -> SIN,01:21:00.000,06:51:00.000,05:30,0,Business class,32940,Direct
+Air India,Mumbai,Singapore,Chhatrapati Shivaji Maharaj International Airport,Singapore Changi Airport,BOM,SIN,BOM -> SIN,02:06:00.000,07:36:00.000,05:30,0,No info,25260,Direct
+Vistara,Mumbai,Singapore,Chhatrapati Shivaji Maharaj International Airport,Singapore Changi Airport,BOM,SIN,BOM -> SIN,02:51:00.000,08:21:00.000,05:30,0,Business class,27950,Direct
+IndiGo,Mumbai,Singapore,Chhatrapati Shivaji Maharaj International Airport,Singapore Changi Airport,BOM,SIN,BOM -> SIN,03:36:00.000,09:06:00.000,05:30,0,In-flight meal not included,18440,Direct
+Scoot,Mumbai,Singapore,Chhatrapati Shivaji Maharaj International Airport,Singapore Changi Airport,BOM,SIN,BOM -> SIN,04:21:00.000,09:51:00.000,05:30,0,In-flight meal not included,19300,Direct
+Singapore Airlines,Singapore,Bengaluru,Singapore Changi Airport,Kempegowda International Airport,SIN,BLR,SIN -> BLR,01:58:00.000,06:48:00.000,04:50,0,Business class,29700,Direct
+Vistara,Singapore,Bengaluru,Singapore Changi Airport,Kempegowda International Airport,SIN,BLR,SIN -> BLR,02:43:00.000,07:33:00.000,04:50,0,Business class,25000,Direct
+IndiGo,Singapore,Bengaluru,Singapore Changi Airport,Kempegowda International Airport,SIN,BLR,SIN -> BLR,03:28:00.000,08:18:00.000,04:50,0,In-flight meal not included,16450,Direct
+Air India,Singapore,Bengaluru,Singapore Changi Airport,Kempegowda International Airport,SIN,BLR,SIN -> BLR,04:13:00.000,09:03:00.000,04:50,0,No info,23300,Direct
+Scoot,Singapore,Bengaluru,Singapore Changi Airport,Kempegowda International Airport,SIN,BLR,SIN -> BLR,04:58:00.000,09:48:00.000,04:50,0,In-flight meal not included,17500,Direct
+Singapore Airlines,Bengaluru,Singapore,Kempegowda International Airport,Singapore Changi Airport,BLR,SIN,BLR -> SIN,02:35:00.000,07:25:00.000,04:50,0,Business class,29700,Direct
+Vistara,Bengaluru,Singapore,Kempegowda International Airport,Singapore Changi Airport,BLR,SIN,BLR -> SIN,03:20:00.000,08:10:00.000,04:50,0,Business class,25000,Direct
+IndiGo,Bengaluru,Singapore,Kempegowda International Airport,Singapore Changi Airport,BLR,SIN,BLR -> SIN,04:05:00.000,08:55:00.000,04:50,0,In-flight meal not included,16450,Direct
+Air India,Bengaluru,Singapore,Kempegowda International Airport,Singapore Changi Airport,BLR,SIN,BLR -> SIN,04:50:00.000,09:40:00.000,04:50,0,No info,23300,Direct
+Scoot,Bengaluru,Singapore,Kempegowda International Airport,Singapore Changi Airport,BLR,SIN,BLR -> SIN,05:35:00.000,10:25:00.000,04:50,0,In-flight meal not included,17500,Direct
+Singapore Airlines,Singapore,Hyderabad,Singapore Changi Airport,Rajiv Gandhi International Airport,SIN,HYD,SIN -> HYD,03:12:00.000,07:57:00.000,04:45,0,Business class,28620,Direct
+Air India,Singapore,Hyderabad,Singapore Changi Airport,Rajiv Gandhi International Airport,SIN,HYD,SIN -> HYD,03:57:00.000,08:42:00.000,04:45,0,No info,21980,Direct
+Vistara,Singapore,Hyderabad,Singapore Changi Airport,Rajiv Gandhi International Airport,SIN,HYD,SIN -> HYD,04:42:00.000,09:27:00.000,04:45,0,Business class,24350,Direct
+IndiGo,Singapore,Hyderabad,Singapore Changi Airport,Rajiv Gandhi International Airport,SIN,HYD,SIN -> HYD,05:27:00.000,10:12:00.000,04:45,0,In-flight meal not included,16119,Direct
+Scoot,Singapore,Hyderabad,Singapore Changi Airport,Rajiv Gandhi International Airport,SIN,HYD,SIN -> HYD,06:12:00.000,10:57:00.000,04:45,0,In-flight meal not included,16900,Direct
+Singapore Airlines,Hyderabad,Singapore,Rajiv Gandhi International Airport,Singapore Changi Airport,HYD,SIN,HYD -> SIN,03:49:00.000,08:34:00.000,04:45,0,Business class,28620,Direct
+Air India,Hyderabad,Singapore,Rajiv Gandhi International Airport,Singapore Changi Airport,HYD,SIN,HYD -> SIN,04:34:00.000,09:19:00.000,04:45,0,No info,21980,Direct
+Vistara,Hyderabad,Singapore,Rajiv Gandhi International Airport,Singapore Changi Airport,HYD,SIN,HYD -> SIN,05:19:00.000,10:04:00.000,04:45,0,Business class,24350,Direct
+IndiGo,Hyderabad,Singapore,Rajiv Gandhi International Airport,Singapore Changi Airport,HYD,SIN,HYD -> SIN,06:04:00.000,10:49:00.000,04:45,0,In-flight meal not included,16119,Direct
+Scoot,Hyderabad,Singapore,Rajiv Gandhi International Airport,Singapore Changi Airport,HYD,SIN,HYD -> SIN,06:49:00.000,11:34:00.000,04:45,0,In-flight meal not included,16900,Direct
+Singapore Airlines,Singapore,Chennai,Singapore Changi Airport,Chennai International Airport,SIN,MAA,SIN -> MAA,04:26:00.000,08:31:00.000,04:05,0,Business class,23760,Direct
+Air India,Singapore,Chennai,Singapore Changi Airport,Chennai International Airport,SIN,MAA,SIN -> MAA,05:11:00.000,09:16:00.000,04:05,0,No info,18290,Direct
+Vistara,Singapore,Chennai,Singapore Changi Airport,Chennai International Airport,SIN,MAA,SIN -> MAA,05:56:00.000,10:01:00.000,04:05,0,Business class,20300,Direct
+IndiGo,Singapore,Chennai,Singapore Changi Airport,Chennai International Airport,SIN,MAA,SIN -> MAA,06:41:00.000,10:46:00.000,04:05,0,In-flight meal not included,13510,Direct
+Scoot,Singapore,Chennai,Singapore Changi Airport,Chennai International Airport,SIN,MAA,SIN -> MAA,07:26:00.000,11:31:00.000,04:05,0,In-flight meal not included,14200,Direct
+Singapore Airlines,Chennai,Singapore,Chennai International Airport,Singapore Changi Airport,MAA,SIN,MAA -> SIN,05:03:00.000,09:08:00.000,04:05,0,Business class,23760,Direct
+Air India,Chennai,Singapore,Chennai International Airport,Singapore Changi Airport,MAA,SIN,MAA -> SIN,05:48:00.000,09:53:00.000,04:05,0,No info,18290,Direct
+Vistara,Chennai,Singapore,Chennai International Airport,Singapore Changi Airport,MAA,SIN,MAA -> SIN,06:33:00.000,10:38:00.000,04:05,0,Business class,20300,Direct
+IndiGo,Chennai,Singapore,Chennai International Airport,Singapore Changi Airport,MAA,SIN,MAA -> SIN,07:18:00.000,11:23:00.000,04:05,0,In-flight meal not included,13510,Direct
+Scoot,Chennai,Singapore,Chennai International Airport,Singapore Changi Airport,MAA,SIN,MAA -> SIN,08:03:00.000,12:08:00.000,04:05,0,In-flight meal not included,14200,Direct
+Singapore Airlines,Singapore,Colombo,Singapore Changi Airport,Bandaranaike International Airport,SIN,CMB,SIN -> CMB,05:40:00.000,09:15:00.000,03:35,0,Business class,22680,Direct
+SriLankan Airlines,Singapore,Colombo,Singapore Changi Airport,Bandaranaike International Airport,SIN,CMB,SIN -> CMB,06:25:00.000,13:05:00.000,06:40,1,1 Long layover,17470,Connecting
+Air India,Singapore,Colombo,Singapore Changi Airport,Bandaranaike International Airport,SIN,CMB,SIN -> CMB,07:10:00.000,10:45:00.000,03:35,0,No info,17720,Direct
+Vistara,Singapore,Colombo,Singapore Changi Airport,Bandaranaike International Airport,SIN,CMB,SIN -> CMB,07:55:00.000,11:30:00.000,03:35,0,Business class,19650,Direct
+IndiGo,Singapore,Colombo,Singapore Changi Airport,Bandaranaike International Airport,SIN,CMB,SIN -> CMB,08:40:00.000,12:15:00.000,03:35,0,In-flight meal not included,13180,Direct
+Singapore Airlines,Colombo,Singapore,Bandaranaike International Airport,Singapore Changi Airport,CMB,SIN,CMB -> SIN,06:17:00.000,09:52:00.000,03:35,0,Business class,22680,Direct
+SriLankan Airlines,Colombo,Singapore,Bandaranaike International Airport,Singapore Changi Airport,CMB,SIN,CMB -> SIN,07:02:00.000,13:42:00.000,06:40,1,1 Long layover,17470,Connecting
+Air India,Colombo,Singapore,Bandaranaike International Airport,Singapore Changi Airport,CMB,SIN,CMB -> SIN,07:47:00.000,11:22:00.000,03:35,0,No info,17720,Direct
+Vistara,Colombo,Singapore,Bandaranaike International Airport,Singapore Changi Airport,CMB,SIN,CMB -> SIN,08:32:00.000,12:07:00.000,03:35,0,Business class,19650,Direct
+IndiGo,Colombo,Singapore,Bandaranaike International Airport,Singapore Changi Airport,CMB,SIN,CMB -> SIN,09:17:00.000,12:52:00.000,03:35,0,In-flight meal not included,13180,Direct
+Singapore Airlines,Singapore,Shanghai,Singapore Changi Airport,Shanghai Pudong International Airport,SIN,PVG,SIN -> PVG,06:54:00.000,11:54:00.000,05:00,0,Business class,38880,Direct
+China Eastern Airlines,Singapore,Shanghai,Singapore Changi Airport,Shanghai Pudong International Airport,SIN,PVG,SIN -> PVG,07:39:00.000,12:39:00.000,05:00,0,No info,29050,Direct
+China Southern Airlines,Singapore,Shanghai,Singapore Changi Airport,Shanghai Pudong International Airport,SIN,PVG,SIN -> PVG,08:24:00.000,13:24:00.000,05:00,0,No info,28580,Direct
+Air China,Singapore,Shanghai,Singapore Changi Airport,Shanghai Pudong International Airport,SIN,PVG,SIN -> PVG,09:09:00.000,14:09:00.000,05:00,0,No info,30270,Direct
+Scoot,Singapore,Shanghai,Singapore Changi Airport,Shanghai Pudong International Airport,SIN,PVG,SIN -> PVG,09:54:00.000,14:54:00.000,05:00,0,In-flight meal not included,22600,Direct
+XiamenAir,Singapore,Shanghai,Singapore Changi Airport,Shanghai Pudong International Airport,SIN,PVG,SIN -> PVG,10:39:00.000,18:19:00.000,07:40,1,In-flight meal not included,27890,Connecting
+Singapore Airlines,Shanghai,Singapore,Shanghai Pudong International Airport,Singapore Changi Airport,PVG,SIN,PVG -> SIN,07:31:00.000,12:31:00.000,05:00,0,Business class,38880,Direct
+China Eastern Airlines,Shanghai,Singapore,Shanghai Pudong International Airport,Singapore Changi Airport,PVG,SIN,PVG -> SIN,08:16:00.000,13:16:00.000,05:00,0,No info,29050,Direct
+China Southern Airlines,Shanghai,Singapore,Shanghai Pudong International Airport,Singapore Changi Airport,PVG,SIN,PVG -> SIN,09:01:00.000,14:01:00.000,05:00,0,No info,28580,Direct
+Air China,Shanghai,Singapore,Shanghai Pudong International Airport,Singapore Changi Airport,PVG,SIN,PVG -> SIN,09:46:00.000,14:46:00.000,05:00,0,No info,30270,Direct
+Scoot,Shanghai,Singapore,Shanghai Pudong International Airport,Singapore Changi Airport,PVG,SIN,PVG -> SIN,10:31:00.000,15:31:00.000,05:00,0,In-flight meal not included,22600,Direct
+XiamenAir,Shanghai,Singapore,Shanghai Pudong International Airport,Singapore Changi Airport,PVG,SIN,PVG -> SIN,11:16:00.000,18:56:00.000,07:40,1,In-flight meal not included,27890,Connecting
+Singapore Airlines,Singapore,Taipei,Singapore Changi Airport,Taiwan Taoyuan International Airport,SIN,TPE,SIN -> TPE,08:08:00.000,12:48:00.000,04:40,0,Business class,33480,Direct
+EVA Air,Singapore,Taipei,Singapore Changi Airport,Taiwan Taoyuan International Airport,SIN,TPE,SIN -> TPE,08:53:00.000,13:33:00.000,04:40,0,Business class,30320,Direct
+China Airlines,Singapore,Taipei,Singapore Changi Airport,Taiwan Taoyuan International Airport,SIN,TPE,SIN -> TPE,09:38:00.000,14:18:00.000,04:40,0,Business class,29950,Direct
+Scoot,Singapore,Taipei,Singapore Changi Airport,Taiwan Taoyuan International Airport,SIN,TPE,SIN -> TPE,10:23:00.000,15:03:00.000,04:40,0,In-flight meal not included,19350,Direct
+Jetstar Asia,Singapore,Taipei,Singapore Changi Airport,Taiwan Taoyuan International Airport,SIN,TPE,SIN -> TPE,11:08:00.000,15:48:00.000,04:40,0,In-flight meal not included,18980,Direct
+Singapore Airlines,Taipei,Singapore,Taiwan Taoyuan International Airport,Singapore Changi Airport,TPE,SIN,TPE -> SIN,08:45:00.000,13:25:00.000,04:40,0,Business class,33480,Direct
+EVA Air,Taipei,Singapore,Taiwan Taoyuan International Airport,Singapore Changi Airport,TPE,SIN,TPE -> SIN,09:30:00.000,14:10:00.000,04:40,0,Business class,30320,Direct
+China Airlines,Taipei,Singapore,Taiwan Taoyuan International Airport,Singapore Changi Airport,TPE,SIN,TPE -> SIN,10:15:00.000,14:55:00.000,04:40,0,Business class,29950,Direct
+Scoot,Taipei,Singapore,Taiwan Taoyuan International Airport,Singapore Changi Airport,TPE,SIN,TPE -> SIN,11:00:00.000,15:40:00.000,04:40,0,In-flight meal not included,19350,Direct
+Jetstar Asia,Taipei,Singapore,Taiwan Taoyuan International Airport,Singapore Changi Airport,TPE,SIN,TPE -> SIN,11:45:00.000,16:25:00.000,04:40,0,In-flight meal not included,18980,Direct
+Singapore Airlines,Singapore,Denpasar (Bali),Singapore Changi Airport,Ngurah Rai International Airport,SIN,DPS,SIN -> DPS,09:22:00.000,11:57:00.000,02:35,0,Business class,15120,Direct
+Garuda Indonesia,Singapore,Denpasar (Bali),Singapore Changi Airport,Ngurah Rai International Airport,SIN,DPS,SIN -> DPS,10:07:00.000,12:42:00.000,02:35,0,Business class,13130,Direct
+Batik Air,Singapore,Denpasar (Bali),Singapore Changi Airport,Ngurah Rai International Airport,SIN,DPS,SIN -> DPS,10:52:00.000,13:27:00.000,02:35,0,No info,11700,Direct
+Scoot,Singapore,Denpasar (Bali),Singapore Changi Airport,Ngurah Rai International Airport,SIN,DPS,SIN -> DPS,11:37:00.000,14:12:00.000,02:35,0,In-flight meal not included,9150,Direct
+AirAsia,Singapore,Denpasar (Bali),Singapore Changi Airport,Ngurah Rai International Airport,SIN,DPS,SIN -> DPS,12:22:00.000,14:57:00.000,02:35,0,In-flight meal not included,8700,Direct
+Singapore Airlines,Denpasar (Bali),Singapore,Ngurah Rai International Airport,Singapore Changi Airport,DPS,SIN,DPS -> SIN,09:59:00.000,12:34:00.000,02:35,0,Business class,15120,Direct
+Garuda Indonesia,Denpasar (Bali),Singapore,Ngurah Rai International Airport,Singapore Changi Airport,DPS,SIN,DPS -> SIN,10:44:00.000,13:19:00.000,02:35,0,Business class,13130,Direct
+Batik Air,Denpasar (Bali),Singapore,Ngurah Rai International Airport,Singapore Changi Airport,DPS,SIN,DPS -> SIN,11:29:00.000,14:04:00.000,02:35,0,No info,11700,Direct
+Scoot,Denpasar (Bali),Singapore,Ngurah Rai International Airport,Singapore Changi Airport,DPS,SIN,DPS -> SIN,12:14:00.000,14:49:00.000,02:35,0,In-flight meal not included,9150,Direct
+AirAsia,Denpasar (Bali),Singapore,Ngurah Rai International Airport,Singapore Changi Airport,DPS,SIN,DPS -> SIN,12:59:00.000,15:34:00.000,02:35,0,In-flight meal not included,8700,Direct
+All Nippon Airways,Tokyo,Seoul,Tokyo Haneda Airport,Incheon International Airport,HND,ICN,HND -> ICN,10:36:00.000,13:06:00.000,02:30,0,Business class,22050,Direct
+Japan Airlines,Tokyo,Seoul,Tokyo Haneda Airport,Incheon International Airport,HND,ICN,HND -> ICN,11:21:00.000,13:51:00.000,02:30,0,Business class,22300,Direct
+Korean Air,Tokyo,Seoul,Tokyo Haneda Airport,Incheon International Airport,HND,ICN,HND -> ICN,12:06:00.000,14:36:00.000,02:30,0,Business class,21920,Direct
+Asiana Airlines,Tokyo,Seoul,Tokyo Haneda Airport,Incheon International Airport,HND,ICN,HND -> ICN,12:51:00.000,15:21:00.000,02:30,0,No info,20070,Direct
+T'way Air,Tokyo,Seoul,Tokyo Haneda Airport,Incheon International Airport,HND,ICN,HND -> ICN,13:36:00.000,16:06:00.000,02:30,0,In-flight meal not included,14440,Direct
+Peach Aviation,Tokyo,Seoul,Tokyo Haneda Airport,Incheon International Airport,HND,ICN,HND -> ICN,14:21:00.000,16:51:00.000,02:30,0,No info,15110,Direct
+All Nippon Airways,Seoul,Tokyo,Incheon International Airport,Tokyo Haneda Airport,ICN,HND,ICN -> HND,11:13:00.000,13:43:00.000,02:30,0,Business class,22050,Direct
+Japan Airlines,Seoul,Tokyo,Incheon International Airport,Tokyo Haneda Airport,ICN,HND,ICN -> HND,11:58:00.000,14:28:00.000,02:30,0,Business class,22300,Direct
+Korean Air,Seoul,Tokyo,Incheon International Airport,Tokyo Haneda Airport,ICN,HND,ICN -> HND,12:43:00.000,15:13:00.000,02:30,0,Business class,21920,Direct
+Asiana Airlines,Seoul,Tokyo,Incheon International Airport,Tokyo Haneda Airport,ICN,HND,ICN -> HND,13:28:00.000,15:58:00.000,02:30,0,No info,20070,Direct
+T'way Air,Seoul,Tokyo,Incheon International Airport,Tokyo Haneda Airport,ICN,HND,ICN -> HND,14:13:00.000,16:43:00.000,02:30,0,In-flight meal not included,14440,Direct
+Peach Aviation,Seoul,Tokyo,Incheon International Airport,Tokyo Haneda Airport,ICN,HND,ICN -> HND,14:58:00.000,17:28:00.000,02:30,0,No info,15110,Direct
+All Nippon Airways,Tokyo,Sydney,Tokyo Haneda Airport,Sydney Kingsford Smith Airport,HND,SYD,HND -> SYD,11:50:00.000,21:35:00.000,09:45,0,Business class,64050,Direct
+Japan Airlines,Tokyo,Sydney,Tokyo Haneda Airport,Sydney Kingsford Smith Airport,HND,SYD,HND -> SYD,12:35:00.000,22:20:00.000,09:45,0,Business class,64300,Direct
+Qantas Airways,Tokyo,Sydney,Tokyo Haneda Airport,Sydney Kingsford Smith Airport,HND,SYD,HND -> SYD,13:20:00.000,23:05:00.000,09:45,0,Business class,61500,Direct
+Virgin Australia,Tokyo,Sydney,Tokyo Haneda Airport,Sydney Kingsford Smith Airport,HND,SYD,HND -> SYD,14:05:00.000,23:50:00.000,09:45,0,No info,55650,Direct
+ZIPAIR Tokyo,Tokyo,Sydney,Tokyo Haneda Airport,Sydney Kingsford Smith Airport,HND,SYD,HND -> SYD,14:50:00.000,00:35:00.000,09:45,0,In-flight meal not included,44920,Direct
+AirAsia X,Tokyo,Sydney,Tokyo Haneda Airport,Sydney Kingsford Smith Airport,HND,SYD,HND -> SYD,15:35:00.000,04:30:00.000,12:55,1,1 Long layover,42730,Connecting
+All Nippon Airways,Sydney,Tokyo,Sydney Kingsford Smith Airport,Tokyo Haneda Airport,SYD,HND,SYD -> HND,12:27:00.000,22:12:00.000,09:45,0,Business class,64050,Direct
+Japan Airlines,Sydney,Tokyo,Sydney Kingsford Smith Airport,Tokyo Haneda Airport,SYD,HND,SYD -> HND,13:12:00.000,22:57:00.000,09:45,0,Business class,64300,Direct
+Qantas Airways,Sydney,Tokyo,Sydney Kingsford Smith Airport,Tokyo Haneda Airport,SYD,HND,SYD -> HND,13:57:00.000,23:42:00.000,09:45,0,Business class,61500,Direct
+Virgin Australia,Sydney,Tokyo,Sydney Kingsford Smith Airport,Tokyo Haneda Airport,SYD,HND,SYD -> HND,14:42:00.000,00:27:00.000,09:45,0,No info,55650,Direct
+ZIPAIR Tokyo,Sydney,Tokyo,Sydney Kingsford Smith Airport,Tokyo Haneda Airport,SYD,HND,SYD -> HND,15:27:00.000,01:12:00.000,09:45,0,In-flight meal not included,44920,Direct
+AirAsia X,Sydney,Tokyo,Sydney Kingsford Smith Airport,Tokyo Haneda Airport,SYD,HND,SYD -> HND,16:12:00.000,05:07:00.000,12:55,1,1 Long layover,42730,Connecting
+All Nippon Airways,Tokyo,Bangkok,Tokyo Haneda Airport,Suvarnabhumi Airport,HND,BKK,HND -> BKK,13:04:00.000,19:19:00.000,06:15,0,Business class,39900,Direct
+Japan Airlines,Tokyo,Bangkok,Tokyo Haneda Airport,Suvarnabhumi Airport,HND,BKK,HND -> BKK,13:49:00.000,20:04:00.000,06:15,0,Business class,40150,Direct
+Thai Airways,Tokyo,Bangkok,Tokyo Haneda Airport,Suvarnabhumi Airport,HND,BKK,HND -> BKK,14:34:00.000,20:49:00.000,06:15,0,Business class,36220,Direct
+Thai AirAsia X,Tokyo,Bangkok,Tokyo Haneda Airport,Suvarnabhumi Airport,HND,BKK,HND -> BKK,15:19:00.000,00:24:00.000,09:05,1,In-flight meal not included,23550,Connecting
+ZIPAIR Tokyo,Tokyo,Bangkok,Tokyo Haneda Airport,Suvarnabhumi Airport,HND,BKK,HND -> BKK,16:04:00.000,22:19:00.000,06:15,0,In-flight meal not included,28360,Direct
+VietJet Air,Tokyo,Bangkok,Tokyo Haneda Airport,Suvarnabhumi Airport,HND,BKK,HND -> BKK,16:49:00.000,23:04:00.000,06:15,0,In-flight meal not included,22909,Direct
+All Nippon Airways,Bangkok,Tokyo,Suvarnabhumi Airport,Tokyo Haneda Airport,BKK,HND,BKK -> HND,13:41:00.000,19:56:00.000,06:15,0,Business class,39900,Direct
+Japan Airlines,Bangkok,Tokyo,Suvarnabhumi Airport,Tokyo Haneda Airport,BKK,HND,BKK -> HND,14:26:00.000,20:41:00.000,06:15,0,Business class,40150,Direct
+Thai Airways,Bangkok,Tokyo,Suvarnabhumi Airport,Tokyo Haneda Airport,BKK,HND,BKK -> HND,15:11:00.000,21:26:00.000,06:15,0,Business class,36220,Direct
+Thai AirAsia X,Bangkok,Tokyo,Suvarnabhumi Airport,Tokyo Haneda Airport,BKK,HND,BKK -> HND,15:56:00.000,01:01:00.000,09:05,1,In-flight meal not included,23550,Connecting
+ZIPAIR Tokyo,Bangkok,Tokyo,Suvarnabhumi Airport,Tokyo Haneda Airport,BKK,HND,BKK -> HND,16:41:00.000,22:56:00.000,06:15,0,In-flight meal not included,28360,Direct
+VietJet Air,Bangkok,Tokyo,Suvarnabhumi Airport,Tokyo Haneda Airport,BKK,HND,BKK -> HND,17:26:00.000,23:41:00.000,06:15,0,In-flight meal not included,22909,Direct
+All Nippon Airways,Tokyo,Shanghai,Tokyo Haneda Airport,Shanghai Pudong International Airport,HND,PVG,HND -> PVG,14:18:00.000,17:18:00.000,03:00,0,Business class,27300,Direct
+Japan Airlines,Tokyo,Shanghai,Tokyo Haneda Airport,Shanghai Pudong International Airport,HND,PVG,HND -> PVG,15:03:00.000,18:03:00.000,03:00,0,Business class,27550,Direct
+China Eastern Airlines,Tokyo,Shanghai,Tokyo Haneda Airport,Shanghai Pudong International Airport,HND,PVG,HND -> PVG,15:48:00.000,18:48:00.000,03:00,0,No info,21300,Direct
+Air China,Tokyo,Shanghai,Tokyo Haneda Airport,Shanghai Pudong International Airport,HND,PVG,HND -> PVG,16:33:00.000,19:33:00.000,03:00,0,No info,22070,Direct
+China Southern Airlines,Tokyo,Shanghai,Tokyo Haneda Airport,Shanghai Pudong International Airport,HND,PVG,HND -> PVG,17:18:00.000,20:18:00.000,03:00,0,No info,21280,Direct
+All Nippon Airways,Shanghai,Tokyo,Shanghai Pudong International Airport,Tokyo Haneda Airport,PVG,HND,PVG -> HND,14:55:00.000,17:55:00.000,03:00,0,Business class,27300,Direct
+Japan Airlines,Shanghai,Tokyo,Shanghai Pudong International Airport,Tokyo Haneda Airport,PVG,HND,PVG -> HND,15:40:00.000,18:40:00.000,03:00,0,Business class,27550,Direct
+China Eastern Airlines,Shanghai,Tokyo,Shanghai Pudong International Airport,Tokyo Haneda Airport,PVG,HND,PVG -> HND,16:25:00.000,19:25:00.000,03:00,0,No info,21300,Direct
+Air China,Shanghai,Tokyo,Shanghai Pudong International Airport,Tokyo Haneda Airport,PVG,HND,PVG -> HND,17:10:00.000,20:10:00.000,03:00,0,No info,22070,Direct
+China Southern Airlines,Shanghai,Tokyo,Shanghai Pudong International Airport,Tokyo Haneda Airport,PVG,HND,PVG -> HND,17:55:00.000,20:55:00.000,03:00,0,No info,21280,Direct
+All Nippon Airways,Tokyo,Melbourne,Tokyo Haneda Airport,Melbourne Tullamarine Airport,HND,MEL,HND -> MEL,15:32:00.000,01:32:00.000,10:00,0,Business class,67200,Direct
+Japan Airlines,Tokyo,Melbourne,Tokyo Haneda Airport,Melbourne Tullamarine Airport,HND,MEL,HND -> MEL,16:17:00.000,02:17:00.000,10:00,0,Business class,67450,Direct
+Qantas Airways,Tokyo,Melbourne,Tokyo Haneda Airport,Melbourne Tullamarine Airport,HND,MEL,HND -> MEL,17:02:00.000,03:02:00.000,10:00,0,Business class,64500,Direct
+Jetstar Airways,Tokyo,Melbourne,Tokyo Haneda Airport,Melbourne Tullamarine Airport,HND,MEL,HND -> MEL,17:47:00.000,03:47:00.000,10:00,0,In-flight meal not included,40430,Direct
+ZIPAIR Tokyo,Tokyo,Melbourne,Tokyo Haneda Airport,Melbourne Tullamarine Airport,HND,MEL,HND -> MEL,18:32:00.000,04:32:00.000,10:00,0,In-flight meal not included,47080,Direct
+All Nippon Airways,Melbourne,Tokyo,Melbourne Tullamarine Airport,Tokyo Haneda Airport,MEL,HND,MEL -> HND,16:09:00.000,02:09:00.000,10:00,0,Business class,67200,Direct
+Japan Airlines,Melbourne,Tokyo,Melbourne Tullamarine Airport,Tokyo Haneda Airport,MEL,HND,MEL -> HND,16:54:00.000,02:54:00.000,10:00,0,Business class,67450,Direct
+Qantas Airways,Melbourne,Tokyo,Melbourne Tullamarine Airport,Tokyo Haneda Airport,MEL,HND,MEL -> HND,17:39:00.000,03:39:00.000,10:00,0,Business class,64500,Direct
+Jetstar Airways,Melbourne,Tokyo,Melbourne Tullamarine Airport,Tokyo Haneda Airport,MEL,HND,MEL -> HND,18:24:00.000,04:24:00.000,10:00,0,In-flight meal not included,40430,Direct
+ZIPAIR Tokyo,Melbourne,Tokyo,Melbourne Tullamarine Airport,Tokyo Haneda Airport,MEL,HND,MEL -> HND,19:09:00.000,05:09:00.000,10:00,0,In-flight meal not included,47080,Direct
+All Nippon Airways,Tokyo,Brisbane,Tokyo Haneda Airport,Brisbane Airport,HND,BNE,HND -> BNE,16:46:00.000,01:51:00.000,09:05,0,Business class,60375,Direct
+Japan Airlines,Tokyo,Brisbane,Tokyo Haneda Airport,Brisbane Airport,HND,BNE,HND -> BNE,17:31:00.000,02:36:00.000,09:05,0,Business class,60625,Direct
+Qantas Airways,Tokyo,Brisbane,Tokyo Haneda Airport,Brisbane Airport,HND,BNE,HND -> BNE,18:16:00.000,03:21:00.000,09:05,0,Business class,58000,Direct
+Virgin Australia,Tokyo,Brisbane,Tokyo Haneda Airport,Brisbane Airport,HND,BNE,HND -> BNE,19:01:00.000,04:06:00.000,09:05,0,No info,52500,Direct
+ZIPAIR Tokyo,Tokyo,Brisbane,Tokyo Haneda Airport,Brisbane Airport,HND,BNE,HND -> BNE,19:46:00.000,04:51:00.000,09:05,0,In-flight meal not included,42400,Direct
+All Nippon Airways,Brisbane,Tokyo,Brisbane Airport,Tokyo Haneda Airport,BNE,HND,BNE -> HND,17:23:00.000,02:28:00.000,09:05,0,Business class,60375,Direct
+Japan Airlines,Brisbane,Tokyo,Brisbane Airport,Tokyo Haneda Airport,BNE,HND,BNE -> HND,18:08:00.000,03:13:00.000,09:05,0,Business class,60625,Direct
+Qantas Airways,Brisbane,Tokyo,Brisbane Airport,Tokyo Haneda Airport,BNE,HND,BNE -> HND,18:53:00.000,03:58:00.000,09:05,0,Business class,58000,Direct
+Virgin Australia,Brisbane,Tokyo,Brisbane Airport,Tokyo Haneda Airport,BNE,HND,BNE -> HND,19:38:00.000,04:43:00.000,09:05,0,No info,52500,Direct
+ZIPAIR Tokyo,Brisbane,Tokyo,Brisbane Airport,Tokyo Haneda Airport,BNE,HND,BNE -> HND,20:23:00.000,05:28:00.000,09:05,0,In-flight meal not included,42400,Direct
+All Nippon Airways,Tokyo,Beijing,Tokyo Haneda Airport,Beijing Capital International Airport,HND,PEK,HND -> PEK,18:00:00.000,21:05:00.000,03:05,0,Business class,26775,Direct
+Japan Airlines,Tokyo,Beijing,Tokyo Haneda Airport,Beijing Capital International Airport,HND,PEK,HND -> PEK,18:45:00.000,21:50:00.000,03:05,0,Business class,27025,Direct
+Air China,Tokyo,Beijing,Tokyo Haneda Airport,Beijing Capital International Airport,HND,PEK,HND -> PEK,19:30:00.000,22:35:00.000,03:05,0,No info,21410,Direct
+China Eastern Airlines,Tokyo,Beijing,Tokyo Haneda Airport,Beijing Capital International Airport,HND,PEK,HND -> PEK,20:15:00.000,23:20:00.000,03:05,0,No info,21150,Direct
+Hainan Airlines,Tokyo,Beijing,Tokyo Haneda Airport,Beijing Capital International Airport,HND,PEK,HND -> PEK,21:00:00.000,03:05:00.000,06:05,1,1 Long layover,20380,Connecting
+All Nippon Airways,Beijing,Tokyo,Beijing Capital International Airport,Tokyo Haneda Airport,PEK,HND,PEK -> HND,18:37:00.000,21:42:00.000,03:05,0,Business class,26775,Direct
+Japan Airlines,Beijing,Tokyo,Beijing Capital International Airport,Tokyo Haneda Airport,PEK,HND,PEK -> HND,19:22:00.000,22:27:00.000,03:05,0,Business class,27025,Direct
+Air China,Beijing,Tokyo,Beijing Capital International Airport,Tokyo Haneda Airport,PEK,HND,PEK -> HND,20:07:00.000,23:12:00.000,03:05,0,No info,21410,Direct
+China Eastern Airlines,Beijing,Tokyo,Beijing Capital International Airport,Tokyo Haneda Airport,PEK,HND,PEK -> HND,20:52:00.000,23:57:00.000,03:05,0,No info,21150,Direct
+Hainan Airlines,Beijing,Tokyo,Beijing Capital International Airport,Tokyo Haneda Airport,PEK,HND,PEK -> HND,21:37:00.000,03:42:00.000,06:05,1,1 Long layover,20380,Connecting
+All Nippon Airways,Tokyo,Delhi,Tokyo Haneda Airport,Indira Gandhi International Airport,HND,DEL,HND -> DEL,19:14:00.000,02:59:00.000,07:45,0,Business class,45150,Direct
+Japan Airlines,Tokyo,Delhi,Tokyo Haneda Airport,Indira Gandhi International Airport,HND,DEL,HND -> DEL,19:59:00.000,03:44:00.000,07:45,0,Business class,45400,Direct
+Air India,Tokyo,Delhi,Tokyo Haneda Airport,Indira Gandhi International Airport,HND,DEL,HND -> DEL,20:44:00.000,04:29:00.000,07:45,0,No info,35760,Direct
+Vistara,Tokyo,Delhi,Tokyo Haneda Airport,Indira Gandhi International Airport,HND,DEL,HND -> DEL,21:29:00.000,05:14:00.000,07:45,0,Business class,39450,Direct
+ZIPAIR Tokyo,Tokyo,Delhi,Tokyo Haneda Airport,Indira Gandhi International Airport,HND,DEL,HND -> DEL,22:14:00.000,05:59:00.000,07:45,0,In-flight meal not included,31960,Direct
+All Nippon Airways,Delhi,Tokyo,Indira Gandhi International Airport,Tokyo Haneda Airport,DEL,HND,DEL -> HND,19:51:00.000,03:36:00.000,07:45,0,Business class,45150,Direct
+Japan Airlines,Delhi,Tokyo,Indira Gandhi International Airport,Tokyo Haneda Airport,DEL,HND,DEL -> HND,20:36:00.000,04:21:00.000,07:45,0,Business class,45400,Direct
+Air India,Delhi,Tokyo,Indira Gandhi International Airport,Tokyo Haneda Airport,DEL,HND,DEL -> HND,21:21:00.000,05:06:00.000,07:45,0,No info,35760,Direct
+Vistara,Delhi,Tokyo,Indira Gandhi International Airport,Tokyo Haneda Airport,DEL,HND,DEL -> HND,22:06:00.000,05:51:00.000,07:45,0,Business class,39450,Direct
+ZIPAIR Tokyo,Delhi,Tokyo,Indira Gandhi International Airport,Tokyo Haneda Airport,DEL,HND,DEL -> HND,22:51:00.000,06:36:00.000,07:45,0,In-flight meal not included,31960,Direct
+All Nippon Airways,Tokyo,Manila,Tokyo Haneda Airport,Ninoy Aquino International Airport,HND,MNL,HND -> MNL,20:28:00.000,00:58:00.000,04:30,0,Business class,29400,Direct
+Japan Airlines,Tokyo,Manila,Tokyo Haneda Airport,Ninoy Aquino International Airport,HND,MNL,HND -> MNL,21:13:00.000,01:43:00.000,04:30,0,Business class,29650,Direct
+Philippine Airlines,Tokyo,Manila,Tokyo Haneda Airport,Ninoy Aquino International Airport,HND,MNL,HND -> MNL,21:58:00.000,02:28:00.000,04:30,0,Business class,25140,Direct
+Cebu Pacific,Tokyo,Manila,Tokyo Haneda Airport,Ninoy Aquino International Airport,HND,MNL,HND -> MNL,22:43:00.000,03:13:00.000,04:30,0,In-flight meal not included,16150,Direct
+ZIPAIR Tokyo,Tokyo,Manila,Tokyo Haneda Airport,Ninoy Aquino International Airport,HND,MNL,HND -> MNL,23:28:00.000,03:58:00.000,04:30,0,In-flight meal not included,21160,Direct
+All Nippon Airways,Manila,Tokyo,Ninoy Aquino International Airport,Tokyo Haneda Airport,MNL,HND,MNL -> HND,21:05:00.000,01:35:00.000,04:30,0,Business class,29400,Direct
+Japan Airlines,Manila,Tokyo,Ninoy Aquino International Airport,Tokyo Haneda Airport,MNL,HND,MNL -> HND,21:50:00.000,02:20:00.000,04:30,0,Business class,29650,Direct
+Philippine Airlines,Manila,Tokyo,Ninoy Aquino International Airport,Tokyo Haneda Airport,MNL,HND,MNL -> HND,22:35:00.000,03:05:00.000,04:30,0,Business class,25140,Direct
+Cebu Pacific,Manila,Tokyo,Ninoy Aquino International Airport,Tokyo Haneda Airport,MNL,HND,MNL -> HND,23:20:00.000,03:50:00.000,04:30,0,In-flight meal not included,16150,Direct
+ZIPAIR Tokyo,Manila,Tokyo,Ninoy Aquino International Airport,Tokyo Haneda Airport,MNL,HND,MNL -> HND,00:05:00.000,04:35:00.000,04:30,0,In-flight meal not included,21160,Direct
+Korean Air,Seoul,Sydney,Incheon International Airport,Sydney Kingsford Smith Airport,ICN,SYD,ICN -> SYD,21:42:00.000,07:52:00.000,10:10,0,Business class,60180,Direct
+Asiana Airlines,Seoul,Sydney,Incheon International Airport,Sydney Kingsford Smith Airport,ICN,SYD,ICN -> SYD,22:27:00.000,08:37:00.000,10:10,0,No info,54530,Direct
+Qantas Airways,Seoul,Sydney,Incheon International Airport,Sydney Kingsford Smith Airport,ICN,SYD,ICN -> SYD,23:12:00.000,09:22:00.000,10:10,0,Business class,59500,Direct
+Jetstar Airways,Seoul,Sydney,Incheon International Airport,Sydney Kingsford Smith Airport,ICN,SYD,ICN -> SYD,23:57:00.000,10:07:00.000,10:10,0,In-flight meal not included,37330,Direct
+Virgin Australia,Seoul,Sydney,Incheon International Airport,Sydney Kingsford Smith Airport,ICN,SYD,ICN -> SYD,00:42:00.000,10:52:00.000,10:10,0,No info,54100,Direct
+Korean Air,Sydney,Seoul,Sydney Kingsford Smith Airport,Incheon International Airport,SYD,ICN,SYD -> ICN,22:19:00.000,08:29:00.000,10:10,0,Business class,60180,Direct
+Asiana Airlines,Sydney,Seoul,Sydney Kingsford Smith Airport,Incheon International Airport,SYD,ICN,SYD -> ICN,23:04:00.000,09:14:00.000,10:10,0,No info,54530,Direct
+Qantas Airways,Sydney,Seoul,Sydney Kingsford Smith Airport,Incheon International Airport,SYD,ICN,SYD -> ICN,23:49:00.000,09:59:00.000,10:10,0,Business class,59500,Direct
+Jetstar Airways,Sydney,Seoul,Sydney Kingsford Smith Airport,Incheon International Airport,SYD,ICN,SYD -> ICN,00:34:00.000,10:44:00.000,10:10,0,In-flight meal not included,37330,Direct
+Virgin Australia,Sydney,Seoul,Sydney Kingsford Smith Airport,Incheon International Airport,SYD,ICN,SYD -> ICN,01:19:00.000,11:29:00.000,10:10,0,No info,54100,Direct
+Korean Air,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,22:56:00.000,04:26:00.000,05:30,0,Business class,32640,Direct
+Asiana Airlines,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,23:41:00.000,05:11:00.000,05:30,0,No info,29690,Direct
+Thai Airways,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,00:26:00.000,05:56:00.000,05:30,0,Business class,30580,Direct
+T'way Air,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,01:11:00.000,06:41:00.000,05:30,0,In-flight meal not included,21230,Direct
+Thai AirAsia X,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,01:56:00.000,10:16:00.000,08:20,1,In-flight meal not included,20200,Connecting
+Korean Air,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,23:33:00.000,05:03:00.000,05:30,0,Business class,32640,Direct
+Asiana Airlines,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,00:18:00.000,05:48:00.000,05:30,0,No info,29690,Direct
+Thai Airways,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,01:03:00.000,06:33:00.000,05:30,0,Business class,30580,Direct
+T'way Air,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,01:48:00.000,07:18:00.000,05:30,0,In-flight meal not included,21230,Direct
+Thai AirAsia X,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,02:33:00.000,10:53:00.000,08:20,1,In-flight meal not included,20200,Connecting
+Korean Air,Seoul,Ho Chi Minh City,Incheon International Airport,Tan Son Nhat International Airport,ICN,SGN,ICN -> SGN,00:10:00.000,05:10:00.000,05:00,0,Business class,28560,Direct
+Asiana Airlines,Seoul,Ho Chi Minh City,Incheon International Airport,Tan Son Nhat International Airport,ICN,SGN,ICN -> SGN,00:55:00.000,05:55:00.000,05:00,0,No info,26010,Direct
+Vietnam Airlines,Seoul,Ho Chi Minh City,Incheon International Airport,Tan Son Nhat International Airport,ICN,SGN,ICN -> SGN,01:40:00.000,06:40:00.000,05:00,0,No info,24300,Direct
+VietJet Air,Seoul,Ho Chi Minh City,Incheon International Airport,Tan Son Nhat International Airport,ICN,SGN,ICN -> SGN,02:25:00.000,07:25:00.000,05:00,0,In-flight meal not included,16710,Direct
+T'way Air,Seoul,Ho Chi Minh City,Incheon International Airport,Tan Son Nhat International Airport,ICN,SGN,ICN -> SGN,03:10:00.000,08:10:00.000,05:00,0,In-flight meal not included,18920,Direct
+Korean Air,Ho Chi Minh City,Seoul,Tan Son Nhat International Airport,Incheon International Airport,SGN,ICN,SGN -> ICN,00:47:00.000,05:47:00.000,05:00,0,Business class,28560,Direct
+Asiana Airlines,Ho Chi Minh City,Seoul,Tan Son Nhat International Airport,Incheon International Airport,SGN,ICN,SGN -> ICN,01:32:00.000,06:32:00.000,05:00,0,No info,26010,Direct
+Vietnam Airlines,Ho Chi Minh City,Seoul,Tan Son Nhat International Airport,Incheon International Airport,SGN,ICN,SGN -> ICN,02:17:00.000,07:17:00.000,05:00,0,No info,24300,Direct
+VietJet Air,Ho Chi Minh City,Seoul,Tan Son Nhat International Airport,Incheon International Airport,SGN,ICN,SGN -> ICN,03:02:00.000,08:02:00.000,05:00,0,In-flight meal not included,16710,Direct
+T'way Air,Ho Chi Minh City,Seoul,Tan Son Nhat International Airport,Incheon International Airport,SGN,ICN,SGN -> ICN,03:47:00.000,08:47:00.000,05:00,0,In-flight meal not included,18920,Direct
+Korean Air,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,01:24:00.000,05:59:00.000,04:35,0,Business class,27540,Direct
+Asiana Airlines,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,02:09:00.000,06:44:00.000,04:35,0,No info,25090,Direct
+Philippine Airlines,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,02:54:00.000,07:29:00.000,04:35,0,Business class,24260,Direct
+Cebu Pacific,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,03:39:00.000,08:14:00.000,04:35,0,In-flight meal not included,15600,Direct
+T'way Air,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,04:24:00.000,08:59:00.000,04:35,0,In-flight meal not included,18280,Direct
+Korean Air,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,02:01:00.000,06:36:00.000,04:35,0,Business class,27540,Direct
+Asiana Airlines,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,02:46:00.000,07:21:00.000,04:35,0,No info,25090,Direct
+Philippine Airlines,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,03:31:00.000,08:06:00.000,04:35,0,Business class,24260,Direct
+Cebu Pacific,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,04:16:00.000,08:51:00.000,04:35,0,In-flight meal not included,15600,Direct
+T'way Air,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,05:01:00.000,09:36:00.000,04:35,0,In-flight meal not included,18280,Direct
+Cathay Pacific,Hong Kong,Taipei,Hong Kong International Airport,Taiwan Taoyuan International Airport,HKG,TPE,HKG -> TPE,02:38:00.000,04:18:00.000,01:40,0,Business class,12000,Direct
+China Airlines,Hong Kong,Taipei,Hong Kong International Airport,Taiwan Taoyuan International Airport,HKG,TPE,HKG -> TPE,03:23:00.000,05:03:00.000,01:40,0,Business class,11650,Direct
+EVA Air,Hong Kong,Taipei,Hong Kong International Airport,Taiwan Taoyuan International Airport,HKG,TPE,HKG -> TPE,04:08:00.000,05:48:00.000,01:40,0,Business class,12140,Direct
+HK Express,Hong Kong,Taipei,Hong Kong International Airport,Taiwan Taoyuan International Airport,HKG,TPE,HKG -> TPE,04:53:00.000,06:33:00.000,01:40,0,No info,8550,Direct
+Hong Kong Airlines,Hong Kong,Taipei,Hong Kong International Airport,Taiwan Taoyuan International Airport,HKG,TPE,HKG -> TPE,05:38:00.000,07:18:00.000,01:40,0,No info,10360,Direct
+Cathay Pacific,Taipei,Hong Kong,Taiwan Taoyuan International Airport,Hong Kong International Airport,TPE,HKG,TPE -> HKG,03:15:00.000,04:55:00.000,01:40,0,Business class,12000,Direct
+China Airlines,Taipei,Hong Kong,Taiwan Taoyuan International Airport,Hong Kong International Airport,TPE,HKG,TPE -> HKG,04:00:00.000,05:40:00.000,01:40,0,Business class,11650,Direct
+EVA Air,Taipei,Hong Kong,Taiwan Taoyuan International Airport,Hong Kong International Airport,TPE,HKG,TPE -> HKG,04:45:00.000,06:25:00.000,01:40,0,Business class,12140,Direct
+HK Express,Taipei,Hong Kong,Taiwan Taoyuan International Airport,Hong Kong International Airport,TPE,HKG,TPE -> HKG,05:30:00.000,07:10:00.000,01:40,0,No info,8550,Direct
+Hong Kong Airlines,Taipei,Hong Kong,Taiwan Taoyuan International Airport,Hong Kong International Airport,TPE,HKG,TPE -> HKG,06:15:00.000,07:55:00.000,01:40,0,No info,10360,Direct
+Cathay Pacific,Hong Kong,Sydney,Hong Kong International Airport,Sydney Kingsford Smith Airport,HKG,SYD,HKG -> SYD,03:52:00.000,12:52:00.000,09:00,0,Business class,55000,Direct
+Qantas Airways,Hong Kong,Sydney,Hong Kong International Airport,Sydney Kingsford Smith Airport,HKG,SYD,HKG -> SYD,04:37:00.000,13:37:00.000,09:00,0,Business class,55250,Direct
+Virgin Australia,Hong Kong,Sydney,Hong Kong International Airport,Sydney Kingsford Smith Airport,HKG,SYD,HKG -> SYD,05:22:00.000,14:22:00.000,09:00,0,No info,50000,Direct
+Jetstar Airways,Hong Kong,Sydney,Hong Kong International Airport,Sydney Kingsford Smith Airport,HKG,SYD,HKG -> SYD,06:07:00.000,15:07:00.000,09:00,0,In-flight meal not included,34850,Direct
+Hong Kong Airlines,Hong Kong,Sydney,Hong Kong International Airport,Sydney Kingsford Smith Airport,HKG,SYD,HKG -> SYD,06:52:00.000,15:52:00.000,09:00,0,No info,43900,Direct
+Cathay Pacific,Sydney,Hong Kong,Sydney Kingsford Smith Airport,Hong Kong International Airport,SYD,HKG,SYD -> HKG,04:29:00.000,13:29:00.000,09:00,0,Business class,55000,Direct
+Qantas Airways,Sydney,Hong Kong,Sydney Kingsford Smith Airport,Hong Kong International Airport,SYD,HKG,SYD -> HKG,05:14:00.000,14:14:00.000,09:00,0,Business class,55250,Direct
+Virgin Australia,Sydney,Hong Kong,Sydney Kingsford Smith Airport,Hong Kong International Airport,SYD,HKG,SYD -> HKG,05:59:00.000,14:59:00.000,09:00,0,No info,50000,Direct
+Jetstar Airways,Sydney,Hong Kong,Sydney Kingsford Smith Airport,Hong Kong International Airport,SYD,HKG,SYD -> HKG,06:44:00.000,15:44:00.000,09:00,0,In-flight meal not included,34850,Direct
+Hong Kong Airlines,Sydney,Hong Kong,Sydney Kingsford Smith Airport,Hong Kong International Airport,SYD,HKG,SYD -> HKG,07:29:00.000,16:29:00.000,09:00,0,No info,43900,Direct
+Cathay Pacific,Hong Kong,Osaka,Hong Kong International Airport,Kansai International Airport,HKG,KIX,HKG -> KIX,05:06:00.000,09:11:00.000,04:05,0,Business class,26000,Direct
+Japan Airlines,Hong Kong,Osaka,Hong Kong International Airport,Kansai International Airport,HKG,KIX,HKG -> KIX,05:51:00.000,09:56:00.000,04:05,0,Business class,27550,Direct
+All Nippon Airways,Hong Kong,Osaka,Hong Kong International Airport,Kansai International Airport,HKG,KIX,HKG -> KIX,06:36:00.000,10:41:00.000,04:05,0,Business class,27800,Direct
+HK Express,Hong Kong,Osaka,Hong Kong International Airport,Kansai International Airport,HKG,KIX,HKG -> KIX,07:21:00.000,11:26:00.000,04:05,0,No info,17650,Direct
+Peach Aviation,Hong Kong,Osaka,Hong Kong International Airport,Kansai International Airport,HKG,KIX,HKG -> KIX,08:06:00.000,12:11:00.000,04:05,0,No info,18160,Direct
+Cathay Pacific,Osaka,Hong Kong,Kansai International Airport,Hong Kong International Airport,KIX,HKG,KIX -> HKG,05:43:00.000,09:48:00.000,04:05,0,Business class,26000,Direct
+Japan Airlines,Osaka,Hong Kong,Kansai International Airport,Hong Kong International Airport,KIX,HKG,KIX -> HKG,06:28:00.000,10:33:00.000,04:05,0,Business class,27550,Direct
+All Nippon Airways,Osaka,Hong Kong,Kansai International Airport,Hong Kong International Airport,KIX,HKG,KIX -> HKG,07:13:00.000,11:18:00.000,04:05,0,Business class,27800,Direct
+HK Express,Osaka,Hong Kong,Kansai International Airport,Hong Kong International Airport,KIX,HKG,KIX -> HKG,07:58:00.000,12:03:00.000,04:05,0,No info,17650,Direct
+Peach Aviation,Osaka,Hong Kong,Kansai International Airport,Hong Kong International Airport,KIX,HKG,KIX -> HKG,08:43:00.000,12:48:00.000,04:05,0,No info,18160,Direct
+Cathay Pacific,Hong Kong,Seoul,Hong Kong International Airport,Incheon International Airport,HKG,ICN,HKG -> ICN,06:20:00.000,09:45:00.000,03:25,0,Business class,23000,Direct
+Korean Air,Hong Kong,Seoul,Hong Kong International Airport,Incheon International Airport,HKG,ICN,HKG -> ICN,07:05:00.000,10:30:00.000,03:25,0,Business class,23710,Direct
+Asiana Airlines,Hong Kong,Seoul,Hong Kong International Airport,Incheon International Airport,HKG,ICN,HKG -> ICN,07:50:00.000,11:15:00.000,03:25,0,No info,21660,Direct
+HK Express,Hong Kong,Seoul,Hong Kong International Airport,Incheon International Airport,HKG,ICN,HKG -> ICN,08:35:00.000,12:00:00.000,03:25,0,No info,15700,Direct
+Jeju Air,Hong Kong,Seoul,Hong Kong International Airport,Incheon International Airport,HKG,ICN,HKG -> ICN,09:20:00.000,12:45:00.000,03:25,0,In-flight meal not included,15260,Direct
+Cathay Pacific,Seoul,Hong Kong,Incheon International Airport,Hong Kong International Airport,ICN,HKG,ICN -> HKG,06:57:00.000,10:22:00.000,03:25,0,Business class,23000,Direct
+Korean Air,Seoul,Hong Kong,Incheon International Airport,Hong Kong International Airport,ICN,HKG,ICN -> HKG,07:42:00.000,11:07:00.000,03:25,0,Business class,23710,Direct
+Asiana Airlines,Seoul,Hong Kong,Incheon International Airport,Hong Kong International Airport,ICN,HKG,ICN -> HKG,08:27:00.000,11:52:00.000,03:25,0,No info,21660,Direct
+HK Express,Seoul,Hong Kong,Incheon International Airport,Hong Kong International Airport,ICN,HKG,ICN -> HKG,09:12:00.000,12:37:00.000,03:25,0,No info,15700,Direct
+Jeju Air,Seoul,Hong Kong,Incheon International Airport,Hong Kong International Airport,ICN,HKG,ICN -> HKG,09:57:00.000,13:22:00.000,03:25,0,In-flight meal not included,15260,Direct
+Malaysia Airlines,Kuala Lumpur,Sydney,Kuala Lumpur International Airport,Sydney Kingsford Smith Airport,KUL,SYD,KUL -> SYD,07:34:00.000,15:49:00.000,08:15,0,No info,40420,Direct
+Batik Air,Kuala Lumpur,Sydney,Kuala Lumpur International Airport,Sydney Kingsford Smith Airport,KUL,SYD,KUL -> SYD,08:19:00.000,16:34:00.000,08:15,0,No info,37850,Direct
+AirAsia X,Kuala Lumpur,Sydney,Kuala Lumpur International Airport,Sydney Kingsford Smith Airport,KUL,SYD,KUL -> SYD,09:04:00.000,20:29:00.000,11:25,1,1 Long layover,32460,Connecting
+Qantas Airways,Kuala Lumpur,Sydney,Kuala Lumpur International Airport,Sydney Kingsford Smith Airport,KUL,SYD,KUL -> SYD,09:49:00.000,18:04:00.000,08:15,0,Business class,47750,Direct
+Virgin Australia,Kuala Lumpur,Sydney,Kuala Lumpur International Airport,Sydney Kingsford Smith Airport,KUL,SYD,KUL -> SYD,10:34:00.000,18:49:00.000,08:15,0,No info,43300,Direct
+Malaysia Airlines,Sydney,Kuala Lumpur,Sydney Kingsford Smith Airport,Kuala Lumpur International Airport,SYD,KUL,SYD -> KUL,08:11:00.000,16:26:00.000,08:15,0,No info,40420,Direct
+Batik Air,Sydney,Kuala Lumpur,Sydney Kingsford Smith Airport,Kuala Lumpur International Airport,SYD,KUL,SYD -> KUL,08:56:00.000,17:11:00.000,08:15,0,No info,37850,Direct
+AirAsia X,Sydney,Kuala Lumpur,Sydney Kingsford Smith Airport,Kuala Lumpur International Airport,SYD,KUL,SYD -> KUL,09:41:00.000,21:06:00.000,11:25,1,1 Long layover,32460,Connecting
+Qantas Airways,Sydney,Kuala Lumpur,Sydney Kingsford Smith Airport,Kuala Lumpur International Airport,SYD,KUL,SYD -> KUL,10:26:00.000,18:41:00.000,08:15,0,Business class,47750,Direct
+Virgin Australia,Sydney,Kuala Lumpur,Sydney Kingsford Smith Airport,Kuala Lumpur International Airport,SYD,KUL,SYD -> KUL,11:11:00.000,19:26:00.000,08:15,0,No info,43300,Direct
+Malaysia Airlines,Kuala Lumpur,Tokyo,Kuala Lumpur International Airport,Tokyo Narita International Airport,KUL,NRT,KUL -> NRT,08:48:00.000,16:03:00.000,07:15,0,No info,36120,Direct
+All Nippon Airways,Kuala Lumpur,Tokyo,Kuala Lumpur International Airport,Tokyo Narita International Airport,KUL,NRT,KUL -> NRT,09:33:00.000,16:48:00.000,07:15,0,Business class,44350,Direct
+Japan Airlines,Kuala Lumpur,Tokyo,Kuala Lumpur International Airport,Tokyo Narita International Airport,KUL,NRT,KUL -> NRT,10:18:00.000,17:33:00.000,07:15,0,Business class,44600,Direct
+AirAsia X,Kuala Lumpur,Tokyo,Kuala Lumpur International Airport,Tokyo Narita International Airport,KUL,NRT,KUL -> NRT,11:03:00.000,21:28:00.000,10:25,1,1 Long layover,29310,Connecting
+Batik Air,Kuala Lumpur,Tokyo,Kuala Lumpur International Airport,Tokyo Narita International Airport,KUL,NRT,KUL -> NRT,11:48:00.000,19:03:00.000,07:15,0,No info,34600,Direct
+Malaysia Airlines,Tokyo,Kuala Lumpur,Tokyo Narita International Airport,Kuala Lumpur International Airport,NRT,KUL,NRT -> KUL,09:25:00.000,16:40:00.000,07:15,0,No info,36120,Direct
+All Nippon Airways,Tokyo,Kuala Lumpur,Tokyo Narita International Airport,Kuala Lumpur International Airport,NRT,KUL,NRT -> KUL,10:10:00.000,17:25:00.000,07:15,0,Business class,44350,Direct
+Japan Airlines,Tokyo,Kuala Lumpur,Tokyo Narita International Airport,Kuala Lumpur International Airport,NRT,KUL,NRT -> KUL,10:55:00.000,18:10:00.000,07:15,0,Business class,44600,Direct
+AirAsia X,Tokyo,Kuala Lumpur,Tokyo Narita International Airport,Kuala Lumpur International Airport,NRT,KUL,NRT -> KUL,11:40:00.000,22:05:00.000,10:25,1,1 Long layover,29310,Connecting
+Batik Air,Tokyo,Kuala Lumpur,Tokyo Narita International Airport,Kuala Lumpur International Airport,NRT,KUL,NRT -> KUL,12:25:00.000,19:40:00.000,07:15,0,No info,34600,Direct
+Malaysia Airlines,Kuala Lumpur,Perth,Kuala Lumpur International Airport,Perth Airport,KUL,PER,KUL -> PER,10:02:00.000,15:37:00.000,05:35,0,No info,22360,Direct
+Batik Air,Kuala Lumpur,Perth,Kuala Lumpur International Airport,Perth Airport,KUL,PER,KUL -> PER,10:47:00.000,16:22:00.000,05:35,0,No info,21050,Direct
+AirAsia X,Kuala Lumpur,Perth,Kuala Lumpur International Airport,Perth Airport,KUL,PER,KUL -> PER,11:32:00.000,20:17:00.000,08:45,1,1 Long layover,18180,Connecting
+Qantas Airways,Kuala Lumpur,Perth,Kuala Lumpur International Airport,Perth Airport,KUL,PER,KUL -> PER,12:17:00.000,17:52:00.000,05:35,0,Business class,26750,Direct
+Virgin Australia,Kuala Lumpur,Perth,Kuala Lumpur International Airport,Perth Airport,KUL,PER,KUL -> PER,13:02:00.000,18:37:00.000,05:35,0,No info,24400,Direct
+Malaysia Airlines,Perth,Kuala Lumpur,Perth Airport,Kuala Lumpur International Airport,PER,KUL,PER -> KUL,10:39:00.000,16:14:00.000,05:35,0,No info,22360,Direct
+Batik Air,Perth,Kuala Lumpur,Perth Airport,Kuala Lumpur International Airport,PER,KUL,PER -> KUL,11:24:00.000,16:59:00.000,05:35,0,No info,21050,Direct
+AirAsia X,Perth,Kuala Lumpur,Perth Airport,Kuala Lumpur International Airport,PER,KUL,PER -> KUL,12:09:00.000,20:54:00.000,08:45,1,1 Long layover,18180,Connecting
+Qantas Airways,Perth,Kuala Lumpur,Perth Airport,Kuala Lumpur International Airport,PER,KUL,PER -> KUL,12:54:00.000,18:29:00.000,05:35,0,Business class,26750,Direct
+Virgin Australia,Perth,Kuala Lumpur,Perth Airport,Kuala Lumpur International Airport,PER,KUL,PER -> KUL,13:39:00.000,19:14:00.000,05:35,0,No info,24400,Direct
+Thai Airways,Bangkok,Sydney,Suvarnabhumi Airport,Sydney Kingsford Smith Airport,BKK,SYD,BKK -> SYD,11:16:00.000,20:21:00.000,09:05,0,Business class,47000,Direct
+Qantas Airways,Bangkok,Sydney,Suvarnabhumi Airport,Sydney Kingsford Smith Airport,BKK,SYD,BKK -> SYD,12:01:00.000,21:06:00.000,09:05,0,Business class,50250,Direct
+Jetstar Airways,Bangkok,Sydney,Suvarnabhumi Airport,Sydney Kingsford Smith Airport,BKK,SYD,BKK -> SYD,12:46:00.000,21:51:00.000,09:05,0,In-flight meal not included,31500,Direct
+Thai AirAsia X,Bangkok,Sydney,Suvarnabhumi Airport,Sydney Kingsford Smith Airport,BKK,SYD,BKK -> SYD,13:31:00.000,01:26:00.000,11:55,1,In-flight meal not included,30750,Connecting
+Scoot,Bangkok,Sydney,Suvarnabhumi Airport,Sydney Kingsford Smith Airport,BKK,SYD,BKK -> SYD,14:16:00.000,23:21:00.000,09:05,0,In-flight meal not included,31000,Direct
+Thai Airways,Sydney,Bangkok,Sydney Kingsford Smith Airport,Suvarnabhumi Airport,SYD,BKK,SYD -> BKK,11:53:00.000,20:58:00.000,09:05,0,Business class,47000,Direct
+Qantas Airways,Sydney,Bangkok,Sydney Kingsford Smith Airport,Suvarnabhumi Airport,SYD,BKK,SYD -> BKK,12:38:00.000,21:43:00.000,09:05,0,Business class,50250,Direct
+Jetstar Airways,Sydney,Bangkok,Sydney Kingsford Smith Airport,Suvarnabhumi Airport,SYD,BKK,SYD -> BKK,13:23:00.000,22:28:00.000,09:05,0,In-flight meal not included,31500,Direct
+Thai AirAsia X,Sydney,Bangkok,Sydney Kingsford Smith Airport,Suvarnabhumi Airport,SYD,BKK,SYD -> BKK,14:08:00.000,02:03:00.000,11:55,1,In-flight meal not included,30750,Connecting
+Scoot,Sydney,Bangkok,Sydney Kingsford Smith Airport,Suvarnabhumi Airport,SYD,BKK,SYD -> BKK,14:53:00.000,23:58:00.000,09:05,0,In-flight meal not included,31000,Direct
+Thai Airways,Bangkok,Hong Kong,Suvarnabhumi Airport,Hong Kong International Airport,BKK,HKG,BKK -> HKG,12:30:00.000,15:10:00.000,02:40,0,Business class,17860,Direct
+Cathay Pacific,Bangkok,Hong Kong,Suvarnabhumi Airport,Hong Kong International Airport,BKK,HKG,BKK -> HKG,13:15:00.000,15:55:00.000,02:40,0,Business class,19250,Direct
+HK Express,Bangkok,Hong Kong,Suvarnabhumi Airport,Hong Kong International Airport,BKK,HKG,BKK -> HKG,14:00:00.000,16:40:00.000,02:40,0,No info,12850,Direct
+Thai AirAsia X,Bangkok,Hong Kong,Suvarnabhumi Airport,Hong Kong International Airport,BKK,HKG,BKK -> HKG,14:45:00.000,20:15:00.000,05:30,1,In-flight meal not included,12150,Connecting
+VietJet Air,Bangkok,Hong Kong,Suvarnabhumi Airport,Hong Kong International Airport,BKK,HKG,BKK -> HKG,15:30:00.000,18:10:00.000,02:40,0,In-flight meal not included,11829,Direct
+Thai Airways,Hong Kong,Bangkok,Hong Kong International Airport,Suvarnabhumi Airport,HKG,BKK,HKG -> BKK,13:07:00.000,15:47:00.000,02:40,0,Business class,17860,Direct
+Cathay Pacific,Hong Kong,Bangkok,Hong Kong International Airport,Suvarnabhumi Airport,HKG,BKK,HKG -> BKK,13:52:00.000,16:32:00.000,02:40,0,Business class,19250,Direct
+HK Express,Hong Kong,Bangkok,Hong Kong International Airport,Suvarnabhumi Airport,HKG,BKK,HKG -> BKK,14:37:00.000,17:17:00.000,02:40,0,No info,12850,Direct
+Thai AirAsia X,Hong Kong,Bangkok,Hong Kong International Airport,Suvarnabhumi Airport,HKG,BKK,HKG -> BKK,15:22:00.000,20:52:00.000,05:30,1,In-flight meal not included,12150,Connecting
+VietJet Air,Hong Kong,Bangkok,Hong Kong International Airport,Suvarnabhumi Airport,HKG,BKK,HKG -> BKK,16:07:00.000,18:47:00.000,02:40,0,In-flight meal not included,11829,Direct
+Thai Airways,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,13:44:00.000,19:14:00.000,05:30,0,Business class,30080,Direct
+Korean Air,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,14:29:00.000,19:59:00.000,05:30,0,Business class,32890,Direct
+Asiana Airlines,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,15:14:00.000,20:44:00.000,05:30,0,No info,29940,Direct
+T'way Air,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,15:59:00.000,21:29:00.000,05:30,0,In-flight meal not included,21230,Direct
+Thai AirAsia X,Bangkok,Seoul,Suvarnabhumi Airport,Incheon International Airport,BKK,ICN,BKK -> ICN,16:44:00.000,01:04:00.000,08:20,1,In-flight meal not included,20200,Connecting
+Thai Airways,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,14:21:00.000,19:51:00.000,05:30,0,Business class,30080,Direct
+Korean Air,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,15:06:00.000,20:36:00.000,05:30,0,Business class,32890,Direct
+Asiana Airlines,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,15:51:00.000,21:21:00.000,05:30,0,No info,29940,Direct
+T'way Air,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,16:36:00.000,22:06:00.000,05:30,0,In-flight meal not included,21230,Direct
+Thai AirAsia X,Seoul,Bangkok,Incheon International Airport,Suvarnabhumi Airport,ICN,BKK,ICN -> BKK,17:21:00.000,01:41:00.000,08:20,1,In-flight meal not included,20200,Connecting
+Garuda Indonesia,Jakarta,Sydney,Soekarno-Hatta International Airport,Sydney Kingsford Smith Airport,CGK,SYD,CGK -> SYD,14:58:00.000,21:58:00.000,07:00,0,Business class,42320,Direct
+Qantas Airways,Jakarta,Sydney,Soekarno-Hatta International Airport,Sydney Kingsford Smith Airport,CGK,SYD,CGK -> SYD,15:43:00.000,22:43:00.000,07:00,0,Business class,46250,Direct
+Batik Air,Jakarta,Sydney,Soekarno-Hatta International Airport,Sydney Kingsford Smith Airport,CGK,SYD,CGK -> SYD,16:28:00.000,23:28:00.000,07:00,0,No info,37300,Direct
+Jetstar Airways,Jakarta,Sydney,Soekarno-Hatta International Airport,Sydney Kingsford Smith Airport,CGK,SYD,CGK -> SYD,17:13:00.000,00:13:00.000,07:00,0,In-flight meal not included,29270,Direct
+Virgin Australia,Jakarta,Sydney,Soekarno-Hatta International Airport,Sydney Kingsford Smith Airport,CGK,SYD,CGK -> SYD,17:58:00.000,00:58:00.000,07:00,0,No info,42400,Direct
+Garuda Indonesia,Sydney,Jakarta,Sydney Kingsford Smith Airport,Soekarno-Hatta International Airport,SYD,CGK,SYD -> CGK,15:35:00.000,22:35:00.000,07:00,0,Business class,42320,Direct
+Qantas Airways,Sydney,Jakarta,Sydney Kingsford Smith Airport,Soekarno-Hatta International Airport,SYD,CGK,SYD -> CGK,16:20:00.000,23:20:00.000,07:00,0,Business class,46250,Direct
+Batik Air,Sydney,Jakarta,Sydney Kingsford Smith Airport,Soekarno-Hatta International Airport,SYD,CGK,SYD -> CGK,17:05:00.000,00:05:00.000,07:00,0,No info,37300,Direct
+Jetstar Airways,Sydney,Jakarta,Sydney Kingsford Smith Airport,Soekarno-Hatta International Airport,SYD,CGK,SYD -> CGK,17:50:00.000,00:50:00.000,07:00,0,In-flight meal not included,29270,Direct
+Virgin Australia,Sydney,Jakarta,Sydney Kingsford Smith Airport,Soekarno-Hatta International Airport,SYD,CGK,SYD -> CGK,18:35:00.000,01:35:00.000,07:00,0,No info,42400,Direct
+Garuda Indonesia,Jakarta,Melbourne,Soekarno-Hatta International Airport,Melbourne Tullamarine Airport,CGK,MEL,CGK -> MEL,16:12:00.000,23:32:00.000,07:20,0,Business class,41400,Direct
+Qantas Airways,Jakarta,Melbourne,Soekarno-Hatta International Airport,Melbourne Tullamarine Airport,CGK,MEL,CGK -> MEL,16:57:00.000,00:17:00.000,07:20,0,Business class,45250,Direct
+Batik Air,Jakarta,Melbourne,Soekarno-Hatta International Airport,Melbourne Tullamarine Airport,CGK,MEL,CGK -> MEL,17:42:00.000,01:02:00.000,07:20,0,No info,36500,Direct
+Jetstar Airways,Jakarta,Melbourne,Soekarno-Hatta International Airport,Melbourne Tullamarine Airport,CGK,MEL,CGK -> MEL,18:27:00.000,01:47:00.000,07:20,0,In-flight meal not included,28650,Direct
+Virgin Australia,Jakarta,Melbourne,Soekarno-Hatta International Airport,Melbourne Tullamarine Airport,CGK,MEL,CGK -> MEL,19:12:00.000,02:32:00.000,07:20,0,No info,41500,Direct
+Garuda Indonesia,Melbourne,Jakarta,Melbourne Tullamarine Airport,Soekarno-Hatta International Airport,MEL,CGK,MEL -> CGK,16:49:00.000,00:09:00.000,07:20,0,Business class,41400,Direct
+Qantas Airways,Melbourne,Jakarta,Melbourne Tullamarine Airport,Soekarno-Hatta International Airport,MEL,CGK,MEL -> CGK,17:34:00.000,00:54:00.000,07:20,0,Business class,45250,Direct
+Batik Air,Melbourne,Jakarta,Melbourne Tullamarine Airport,Soekarno-Hatta International Airport,MEL,CGK,MEL -> CGK,18:19:00.000,01:39:00.000,07:20,0,No info,36500,Direct
+Jetstar Airways,Melbourne,Jakarta,Melbourne Tullamarine Airport,Soekarno-Hatta International Airport,MEL,CGK,MEL -> CGK,19:04:00.000,02:24:00.000,07:20,0,In-flight meal not included,28650,Direct
+Virgin Australia,Melbourne,Jakarta,Melbourne Tullamarine Airport,Soekarno-Hatta International Airport,MEL,CGK,MEL -> CGK,19:49:00.000,03:09:00.000,07:20,0,No info,41500,Direct
+Garuda Indonesia,Jakarta,Perth,Soekarno-Hatta International Airport,Perth Airport,CGK,PER,CGK -> PER,17:26:00.000,22:11:00.000,04:45,0,Business class,23920,Direct
+Batik Air,Jakarta,Perth,Soekarno-Hatta International Airport,Perth Airport,CGK,PER,CGK -> PER,18:11:00.000,22:56:00.000,04:45,0,No info,21050,Direct
+AirAsia X,Jakarta,Perth,Soekarno-Hatta International Airport,Perth Airport,CGK,PER,CGK -> PER,18:56:00.000,02:51:00.000,07:55,1,1 Long layover,18180,Connecting
+Jetstar Airways,Jakarta,Perth,Soekarno-Hatta International Airport,Perth Airport,CGK,PER,CGK -> PER,19:41:00.000,00:26:00.000,04:45,0,In-flight meal not included,16870,Direct
+Virgin Australia,Jakarta,Perth,Soekarno-Hatta International Airport,Perth Airport,CGK,PER,CGK -> PER,20:26:00.000,01:11:00.000,04:45,0,No info,24400,Direct
+Garuda Indonesia,Perth,Jakarta,Perth Airport,Soekarno-Hatta International Airport,PER,CGK,PER -> CGK,18:03:00.000,22:48:00.000,04:45,0,Business class,23920,Direct
+Batik Air,Perth,Jakarta,Perth Airport,Soekarno-Hatta International Airport,PER,CGK,PER -> CGK,18:48:00.000,23:33:00.000,04:45,0,No info,21050,Direct
+AirAsia X,Perth,Jakarta,Perth Airport,Soekarno-Hatta International Airport,PER,CGK,PER -> CGK,19:33:00.000,03:28:00.000,07:55,1,1 Long layover,18180,Connecting
+Jetstar Airways,Perth,Jakarta,Perth Airport,Soekarno-Hatta International Airport,PER,CGK,PER -> CGK,20:18:00.000,01:03:00.000,04:45,0,In-flight meal not included,16870,Direct
+Virgin Australia,Perth,Jakarta,Perth Airport,Soekarno-Hatta International Airport,PER,CGK,PER -> CGK,21:03:00.000,01:48:00.000,04:45,0,No info,24400,Direct
+Philippine Airlines,Manila,Sydney,Ninoy Aquino International Airport,Sydney Kingsford Smith Airport,MNL,SYD,MNL -> SYD,18:40:00.000,02:40:00.000,08:00,0,Business class,41360,Direct
+Qantas Airways,Manila,Sydney,Ninoy Aquino International Airport,Sydney Kingsford Smith Airport,MNL,SYD,MNL -> SYD,19:25:00.000,03:25:00.000,08:00,0,Business class,47250,Direct
+Cebu Pacific,Manila,Sydney,Ninoy Aquino International Airport,Sydney Kingsford Smith Airport,MNL,SYD,MNL -> SYD,20:10:00.000,04:10:00.000,08:00,0,In-flight meal not included,26350,Direct
+Jetstar Airways,Manila,Sydney,Ninoy Aquino International Airport,Sydney Kingsford Smith Airport,MNL,SYD,MNL -> SYD,20:55:00.000,04:55:00.000,08:00,0,In-flight meal not included,29890,Direct
+Virgin Australia,Manila,Sydney,Ninoy Aquino International Airport,Sydney Kingsford Smith Airport,MNL,SYD,MNL -> SYD,21:40:00.000,05:40:00.000,08:00,0,No info,43300,Direct
+Philippine Airlines,Sydney,Manila,Sydney Kingsford Smith Airport,Ninoy Aquino International Airport,SYD,MNL,SYD -> MNL,19:17:00.000,03:17:00.000,08:00,0,Business class,41360,Direct
+Qantas Airways,Sydney,Manila,Sydney Kingsford Smith Airport,Ninoy Aquino International Airport,SYD,MNL,SYD -> MNL,20:02:00.000,04:02:00.000,08:00,0,Business class,47250,Direct
+Cebu Pacific,Sydney,Manila,Sydney Kingsford Smith Airport,Ninoy Aquino International Airport,SYD,MNL,SYD -> MNL,20:47:00.000,04:47:00.000,08:00,0,In-flight meal not included,26350,Direct
+Jetstar Airways,Sydney,Manila,Sydney Kingsford Smith Airport,Ninoy Aquino International Airport,SYD,MNL,SYD -> MNL,21:32:00.000,05:32:00.000,08:00,0,In-flight meal not included,29890,Direct
+Virgin Australia,Sydney,Manila,Sydney Kingsford Smith Airport,Ninoy Aquino International Airport,SYD,MNL,SYD -> MNL,22:17:00.000,06:17:00.000,08:00,0,No info,43300,Direct
+Philippine Airlines,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,19:54:00.000,00:24:00.000,04:30,0,Business class,22000,Direct
+Korean Air,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,20:39:00.000,01:09:00.000,04:30,0,Business class,25750,Direct
+Asiana Airlines,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,21:24:00.000,01:54:00.000,04:30,0,No info,23500,Direct
+Cebu Pacific,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,22:09:00.000,02:39:00.000,04:30,0,In-flight meal not included,14500,Direct
+T'way Air,Manila,Seoul,Ninoy Aquino International Airport,Incheon International Airport,MNL,ICN,MNL -> ICN,22:54:00.000,03:24:00.000,04:30,0,In-flight meal not included,17000,Direct
+Philippine Airlines,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,20:31:00.000,01:01:00.000,04:30,0,Business class,22000,Direct
+Korean Air,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,21:16:00.000,01:46:00.000,04:30,0,Business class,25750,Direct
+Asiana Airlines,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,22:01:00.000,02:31:00.000,04:30,0,No info,23500,Direct
+Cebu Pacific,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,22:46:00.000,03:16:00.000,04:30,0,In-flight meal not included,14500,Direct
+T'way Air,Seoul,Manila,Incheon International Airport,Ninoy Aquino International Airport,ICN,MNL,ICN -> MNL,23:31:00.000,04:01:00.000,04:30,0,In-flight meal not included,17000,Direct
+Vietnam Airlines,Ho Chi Minh City,Sydney,Tan Son Nhat International Airport,Sydney Kingsford Smith Airport,SGN,SYD,SGN -> SYD,21:08:00.000,05:58:00.000,08:50,0,No info,44200,Direct
+Qantas Airways,Ho Chi Minh City,Sydney,Tan Son Nhat International Airport,Sydney Kingsford Smith Airport,SGN,SYD,SGN -> SYD,21:53:00.000,06:43:00.000,08:50,0,Business class,52250,Direct
+VietJet Air,Ho Chi Minh City,Sydney,Tan Son Nhat International Airport,Sydney Kingsford Smith Airport,SGN,SYD,SGN -> SYD,22:38:00.000,07:28:00.000,08:50,0,In-flight meal not included,30139,Direct
+Jetstar Airways,Ho Chi Minh City,Sydney,Tan Son Nhat International Airport,Sydney Kingsford Smith Airport,SGN,SYD,SGN -> SYD,23:23:00.000,08:13:00.000,08:50,0,In-flight meal not included,32990,Direct
+Bamboo Airways,Ho Chi Minh City,Sydney,Tan Son Nhat International Airport,Sydney Kingsford Smith Airport,SGN,SYD,SGN -> SYD,00:08:00.000,08:58:00.000,08:50,0,No info,44160,Direct
+Vietnam Airlines,Sydney,Ho Chi Minh City,Sydney Kingsford Smith Airport,Tan Son Nhat International Airport,SYD,SGN,SYD -> SGN,21:45:00.000,06:35:00.000,08:50,0,No info,44200,Direct
+Qantas Airways,Sydney,Ho Chi Minh City,Sydney Kingsford Smith Airport,Tan Son Nhat International Airport,SYD,SGN,SYD -> SGN,22:30:00.000,07:20:00.000,08:50,0,Business class,52250,Direct
+VietJet Air,Sydney,Ho Chi Minh City,Sydney Kingsford Smith Airport,Tan Son Nhat International Airport,SYD,SGN,SYD -> SGN,23:15:00.000,08:05:00.000,08:50,0,In-flight meal not included,30139,Direct
+Jetstar Airways,Sydney,Ho Chi Minh City,Sydney Kingsford Smith Airport,Tan Son Nhat International Airport,SYD,SGN,SYD -> SGN,00:00:00.000,08:50:00.000,08:50,0,In-flight meal not included,32990,Direct
+Bamboo Airways,Sydney,Ho Chi Minh City,Sydney Kingsford Smith Airport,Tan Son Nhat International Airport,SYD,SGN,SYD -> SGN,00:45:00.000,09:35:00.000,08:50,0,No info,44160,Direct
+Vietnam Airlines,Hanoi,Seoul,Noi Bai International Airport,Incheon International Airport,HAN,ICN,HAN -> ICN,22:22:00.000,02:12:00.000,03:50,0,No info,18700,Direct
+Korean Air,Hanoi,Seoul,Noi Bai International Airport,Incheon International Airport,HAN,ICN,HAN -> ICN,23:07:00.000,02:57:00.000,03:50,0,Business class,22690,Direct
+Asiana Airlines,Hanoi,Seoul,Noi Bai International Airport,Incheon International Airport,HAN,ICN,HAN -> ICN,23:52:00.000,03:42:00.000,03:50,0,No info,20740,Direct
+VietJet Air,Hanoi,Seoul,Noi Bai International Airport,Incheon International Airport,HAN,ICN,HAN -> ICN,00:37:00.000,04:27:00.000,03:50,0,In-flight meal not included,13289,Direct
+T'way Air,Hanoi,Seoul,Noi Bai International Airport,Incheon International Airport,HAN,ICN,HAN -> ICN,01:22:00.000,05:12:00.000,03:50,0,In-flight meal not included,15080,Direct
+Vietnam Airlines,Seoul,Hanoi,Incheon International Airport,Noi Bai International Airport,ICN,HAN,ICN -> HAN,22:59:00.000,02:49:00.000,03:50,0,No info,18700,Direct
+Korean Air,Seoul,Hanoi,Incheon International Airport,Noi Bai International Airport,ICN,HAN,ICN -> HAN,23:44:00.000,03:34:00.000,03:50,0,Business class,22690,Direct
+Asiana Airlines,Seoul,Hanoi,Incheon International Airport,Noi Bai International Airport,ICN,HAN,ICN -> HAN,00:29:00.000,04:19:00.000,03:50,0,No info,20740,Direct
+VietJet Air,Seoul,Hanoi,Incheon International Airport,Noi Bai International Airport,ICN,HAN,ICN -> HAN,01:14:00.000,05:04:00.000,03:50,0,In-flight meal not included,13289,Direct
+T'way Air,Seoul,Hanoi,Incheon International Airport,Noi Bai International Airport,ICN,HAN,ICN -> HAN,01:59:00.000,05:49:00.000,03:50,0,In-flight meal not included,15080,Direct
+Air India,Delhi,Hong Kong,Indira Gandhi International Airport,Hong Kong International Airport,DEL,HKG,DEL -> HKG,23:36:00.000,04:56:00.000,05:20,0,No info,27060,Direct
+Vistara,Delhi,Hong Kong,Indira Gandhi International Airport,Hong Kong International Airport,DEL,HKG,DEL -> HKG,00:21:00.000,05:41:00.000,05:20,0,Business class,29950,Direct
+Cathay Pacific,Delhi,Hong Kong,Indira Gandhi International Airport,Hong Kong International Airport,DEL,HKG,DEL -> HKG,01:06:00.000,06:26:00.000,05:20,0,Business class,33500,Direct
+IndiGo,Delhi,Hong Kong,Indira Gandhi International Airport,Hong Kong International Airport,DEL,HKG,DEL -> HKG,01:51:00.000,07:11:00.000,05:20,0,In-flight meal not included,19890,Direct
+Hong Kong Airlines,Delhi,Hong Kong,Indira Gandhi International Airport,Hong Kong International Airport,DEL,HKG,DEL -> HKG,02:36:00.000,07:56:00.000,05:20,0,No info,26740,Direct
+Air India,Hong Kong,Delhi,Hong Kong International Airport,Indira Gandhi International Airport,HKG,DEL,HKG -> DEL,00:13:00.000,05:33:00.000,05:20,0,No info,27060,Direct
+Vistara,Hong Kong,Delhi,Hong Kong International Airport,Indira Gandhi International Airport,HKG,DEL,HKG -> DEL,00:58:00.000,06:18:00.000,05:20,0,Business class,29950,Direct
+Cathay Pacific,Hong Kong,Delhi,Hong Kong International Airport,Indira Gandhi International Airport,HKG,DEL,HKG -> DEL,01:43:00.000,07:03:00.000,05:20,0,Business class,33500,Direct
+IndiGo,Hong Kong,Delhi,Hong Kong International Airport,Indira Gandhi International Airport,HKG,DEL,HKG -> DEL,02:28:00.000,07:48:00.000,05:20,0,In-flight meal not included,19890,Direct
+Hong Kong Airlines,Hong Kong,Delhi,Hong Kong International Airport,Indira Gandhi International Airport,HKG,DEL,HKG -> DEL,03:13:00.000,08:33:00.000,05:20,0,No info,26740,Direct
+Air India,Mumbai,Hong Kong,Chhatrapati Shivaji Maharaj International Airport,Hong Kong International Airport,BOM,HKG,BOM -> HKG,00:50:00.000,06:00:00.000,05:10,0,No info,26650,Direct
+Vistara,Mumbai,Hong Kong,Chhatrapati Shivaji Maharaj International Airport,Hong Kong International Airport,BOM,HKG,BOM -> HKG,01:35:00.000,06:45:00.000,05:10,0,Business class,29500,Direct
+Cathay Pacific,Mumbai,Hong Kong,Chhatrapati Shivaji Maharaj International Airport,Hong Kong International Airport,BOM,HKG,BOM -> HKG,02:20:00.000,07:30:00.000,05:10,0,Business class,33000,Direct
+IndiGo,Mumbai,Hong Kong,Chhatrapati Shivaji Maharaj International Airport,Hong Kong International Airport,BOM,HKG,BOM -> HKG,03:05:00.000,08:15:00.000,05:10,0,In-flight meal not included,19600,Direct
+Hong Kong Airlines,Mumbai,Hong Kong,Chhatrapati Shivaji Maharaj International Airport,Hong Kong International Airport,BOM,HKG,BOM -> HKG,03:50:00.000,09:00:00.000,05:10,0,No info,26350,Direct
+Air India,Hong Kong,Mumbai,Hong Kong International Airport,Chhatrapati Shivaji Maharaj International Airport,HKG,BOM,HKG -> BOM,01:27:00.000,06:37:00.000,05:10,0,No info,26650,Direct
+Vistara,Hong Kong,Mumbai,Hong Kong International Airport,Chhatrapati Shivaji Maharaj International Airport,HKG,BOM,HKG -> BOM,02:12:00.000,07:22:00.000,05:10,0,Business class,29500,Direct
+Cathay Pacific,Hong Kong,Mumbai,Hong Kong International Airport,Chhatrapati Shivaji Maharaj International Airport,HKG,BOM,HKG -> BOM,02:57:00.000,08:07:00.000,05:10,0,Business class,33000,Direct
+IndiGo,Hong Kong,Mumbai,Hong Kong International Airport,Chhatrapati Shivaji Maharaj International Airport,HKG,BOM,HKG -> BOM,03:42:00.000,08:52:00.000,05:10,0,In-flight meal not included,19600,Direct
+Hong Kong Airlines,Hong Kong,Mumbai,Hong Kong International Airport,Chhatrapati Shivaji Maharaj International Airport,HKG,BOM,HKG -> BOM,04:27:00.000,09:37:00.000,05:10,0,No info,26350,Direct
+Qantas Airways,Brisbane,Auckland,Brisbane Airport,Auckland Airport,BNE,AKL,BNE -> AKL,02:04:00.000,05:19:00.000,03:15,0,Business class,22000,Direct
+Air New Zealand,Brisbane,Auckland,Brisbane Airport,Auckland Airport,BNE,AKL,BNE -> AKL,02:49:00.000,06:04:00.000,03:15,0,Business class,22250,Direct
+Virgin Australia,Brisbane,Auckland,Brisbane Airport,Auckland Airport,BNE,AKL,BNE -> AKL,03:34:00.000,06:49:00.000,03:15,0,No info,20300,Direct
+Jetstar Airways,Brisbane,Auckland,Brisbane Airport,Auckland Airport,BNE,AKL,BNE -> AKL,04:19:00.000,07:34:00.000,03:15,0,In-flight meal not included,14390,Direct
+Fiji Airways,Brisbane,Auckland,Brisbane Airport,Auckland Airport,BNE,AKL,BNE -> AKL,05:04:00.000,08:19:00.000,03:15,0,Business class,20800,Direct
+Qantas Airways,Auckland,Brisbane,Auckland Airport,Brisbane Airport,AKL,BNE,AKL -> BNE,02:41:00.000,05:56:00.000,03:15,0,Business class,22000,Direct
+Air New Zealand,Auckland,Brisbane,Auckland Airport,Brisbane Airport,AKL,BNE,AKL -> BNE,03:26:00.000,06:41:00.000,03:15,0,Business class,22250,Direct
+Virgin Australia,Auckland,Brisbane,Auckland Airport,Brisbane Airport,AKL,BNE,AKL -> BNE,04:11:00.000,07:26:00.000,03:15,0,No info,20300,Direct
+Jetstar Airways,Auckland,Brisbane,Auckland Airport,Brisbane Airport,AKL,BNE,AKL -> BNE,04:56:00.000,08:11:00.000,03:15,0,In-flight meal not included,14390,Direct
+Fiji Airways,Auckland,Brisbane,Auckland Airport,Brisbane Airport,AKL,BNE,AKL -> BNE,05:41:00.000,08:56:00.000,03:15,0,Business class,20800,Direct
+Air New Zealand,Auckland,Melbourne,Auckland Airport,Melbourne Tullamarine Airport,AKL,MEL,AKL -> MEL,03:18:00.000,06:53:00.000,03:35,0,Business class,24000,Direct
+Qantas Airways,Auckland,Melbourne,Auckland Airport,Melbourne Tullamarine Airport,AKL,MEL,AKL -> MEL,04:03:00.000,07:38:00.000,03:35,0,Business class,24250,Direct
+Virgin Australia,Auckland,Melbourne,Auckland Airport,Melbourne Tullamarine Airport,AKL,MEL,AKL -> MEL,04:48:00.000,08:23:00.000,03:35,0,No info,22100,Direct
+Jetstar Airways,Auckland,Melbourne,Auckland Airport,Melbourne Tullamarine Airport,AKL,MEL,AKL -> MEL,05:33:00.000,09:08:00.000,03:35,0,In-flight meal not included,15630,Direct
+Air New Zealand,Melbourne,Auckland,Melbourne Tullamarine Airport,Auckland Airport,MEL,AKL,MEL -> AKL,03:55:00.000,07:30:00.000,03:35,0,Business class,24000,Direct
+Qantas Airways,Melbourne,Auckland,Melbourne Tullamarine Airport,Auckland Airport,MEL,AKL,MEL -> AKL,04:40:00.000,08:15:00.000,03:35,0,Business class,24250,Direct
+Virgin Australia,Melbourne,Auckland,Melbourne Tullamarine Airport,Auckland Airport,MEL,AKL,MEL -> AKL,05:25:00.000,09:00:00.000,03:35,0,No info,22100,Direct
+Jetstar Airways,Melbourne,Auckland,Melbourne Tullamarine Airport,Auckland Airport,MEL,AKL,MEL -> AKL,06:10:00.000,09:45:00.000,03:35,0,In-flight meal not included,15630,Direct
+Qantas Airways,Sydney,Auckland,Sydney Kingsford Smith Airport,Auckland Airport,SYD,AKL,SYD -> AKL,04:32:00.000,07:47:00.000,03:15,0,Business class,23500,Direct
+Air New Zealand,Sydney,Auckland,Sydney Kingsford Smith Airport,Auckland Airport,SYD,AKL,SYD -> AKL,05:17:00.000,08:32:00.000,03:15,0,Business class,23750,Direct
+Virgin Australia,Sydney,Auckland,Sydney Kingsford Smith Airport,Auckland Airport,SYD,AKL,SYD -> AKL,06:02:00.000,09:17:00.000,03:15,0,No info,21650,Direct
+Jetstar Airways,Sydney,Auckland,Sydney Kingsford Smith Airport,Auckland Airport,SYD,AKL,SYD -> AKL,06:47:00.000,10:02:00.000,03:15,0,In-flight meal not included,15320,Direct
+Qantas Airways,Auckland,Sydney,Auckland Airport,Sydney Kingsford Smith Airport,AKL,SYD,AKL -> SYD,05:09:00.000,08:24:00.000,03:15,0,Business class,23500,Direct
+Air New Zealand,Auckland,Sydney,Auckland Airport,Sydney Kingsford Smith Airport,AKL,SYD,AKL -> SYD,05:54:00.000,09:09:00.000,03:15,0,Business class,23750,Direct
+Virgin Australia,Auckland,Sydney,Auckland Airport,Sydney Kingsford Smith Airport,AKL,SYD,AKL -> SYD,06:39:00.000,09:54:00.000,03:15,0,No info,21650,Direct
+Jetstar Airways,Auckland,Sydney,Auckland Airport,Sydney Kingsford Smith Airport,AKL,SYD,AKL -> SYD,07:24:00.000,10:39:00.000,03:15,0,In-flight meal not included,15320,Direct
+Qantas Airways,Sydney,Melbourne,Sydney Kingsford Smith Airport,Melbourne Tullamarine Airport,SYD,MEL,SYD -> MEL,05:46:00.000,07:21:00.000,01:35,0,Business class,9000,Direct
+Virgin Australia,Sydney,Melbourne,Sydney Kingsford Smith Airport,Melbourne Tullamarine Airport,SYD,MEL,SYD -> MEL,06:31:00.000,08:06:00.000,01:35,0,No info,8350,Direct
+Jetstar Airways,Sydney,Melbourne,Sydney Kingsford Smith Airport,Melbourne Tullamarine Airport,SYD,MEL,SYD -> MEL,07:16:00.000,08:51:00.000,01:35,0,In-flight meal not included,6080,Direct
+Rex Airlines,Sydney,Melbourne,Sydney Kingsford Smith Airport,Melbourne Tullamarine Airport,SYD,MEL,SYD -> MEL,08:01:00.000,09:36:00.000,01:35,0,No info,5700,Direct
+Qantas Airways,Melbourne,Sydney,Melbourne Tullamarine Airport,Sydney Kingsford Smith Airport,MEL,SYD,MEL -> SYD,06:23:00.000,07:58:00.000,01:35,0,Business class,9000,Direct
+Virgin Australia,Melbourne,Sydney,Melbourne Tullamarine Airport,Sydney Kingsford Smith Airport,MEL,SYD,MEL -> SYD,07:08:00.000,08:43:00.000,01:35,0,No info,8350,Direct
+Jetstar Airways,Melbourne,Sydney,Melbourne Tullamarine Airport,Sydney Kingsford Smith Airport,MEL,SYD,MEL -> SYD,07:53:00.000,09:28:00.000,01:35,0,In-flight meal not included,6080,Direct
+Rex Airlines,Melbourne,Sydney,Melbourne Tullamarine Airport,Sydney Kingsford Smith Airport,MEL,SYD,MEL -> SYD,08:38:00.000,10:13:00.000,01:35,0,No info,5700,Direct
+Qantas Airways,Sydney,Brisbane,Sydney Kingsford Smith Airport,Brisbane Airport,SYD,BNE,SYD -> BNE,07:00:00.000,08:50:00.000,01:50,0,Business class,9500,Direct
+Virgin Australia,Sydney,Brisbane,Sydney Kingsford Smith Airport,Brisbane Airport,SYD,BNE,SYD -> BNE,07:45:00.000,09:35:00.000,01:50,0,No info,8800,Direct
+Jetstar Airways,Sydney,Brisbane,Sydney Kingsford Smith Airport,Brisbane Airport,SYD,BNE,SYD -> BNE,08:30:00.000,10:20:00.000,01:50,0,In-flight meal not included,6390,Direct
+Rex Airlines,Sydney,Brisbane,Sydney Kingsford Smith Airport,Brisbane Airport,SYD,BNE,SYD -> BNE,09:15:00.000,11:05:00.000,01:50,0,No info,5975,Direct
+Qantas Airways,Brisbane,Sydney,Brisbane Airport,Sydney Kingsford Smith Airport,BNE,SYD,BNE -> SYD,07:37:00.000,09:27:00.000,01:50,0,Business class,9500,Direct
+Virgin Australia,Brisbane,Sydney,Brisbane Airport,Sydney Kingsford Smith Airport,BNE,SYD,BNE -> SYD,08:22:00.000,10:12:00.000,01:50,0,No info,8800,Direct
+Jetstar Airways,Brisbane,Sydney,Brisbane Airport,Sydney Kingsford Smith Airport,BNE,SYD,BNE -> SYD,09:07:00.000,10:57:00.000,01:50,0,In-flight meal not included,6390,Direct
+Rex Airlines,Brisbane,Sydney,Brisbane Airport,Sydney Kingsford Smith Airport,BNE,SYD,BNE -> SYD,09:52:00.000,11:42:00.000,01:50,0,No info,5975,Direct
+Qantas Airways,Melbourne,Perth,Melbourne Tullamarine Airport,Perth Airport,MEL,PER,MEL -> PER,08:14:00.000,12:19:00.000,04:05,0,Business class,21000,Direct
+Virgin Australia,Melbourne,Perth,Melbourne Tullamarine Airport,Perth Airport,MEL,PER,MEL -> PER,08:59:00.000,13:04:00.000,04:05,0,No info,19150,Direct
+Jetstar Airways,Melbourne,Perth,Melbourne Tullamarine Airport,Perth Airport,MEL,PER,MEL -> PER,09:44:00.000,13:49:00.000,04:05,0,In-flight meal not included,13520,Direct
+Qantas Airways,Perth,Melbourne,Perth Airport,Melbourne Tullamarine Airport,PER,MEL,PER -> MEL,08:51:00.000,12:56:00.000,04:05,0,Business class,21000,Direct
+Virgin Australia,Perth,Melbourne,Perth Airport,Melbourne Tullamarine Airport,PER,MEL,PER -> MEL,09:36:00.000,13:41:00.000,04:05,0,No info,19150,Direct
+Jetstar Airways,Perth,Melbourne,Perth Airport,Melbourne Tullamarine Airport,PER,MEL,PER -> MEL,10:21:00.000,14:26:00.000,04:05,0,In-flight meal not included,13520,Direct
+Qantas Airways,Perth,Sydney,Perth Airport,Sydney Kingsford Smith Airport,PER,SYD,PER -> SYD,09:28:00.000,14:03:00.000,04:35,0,Business class,26000,Direct
+Virgin Australia,Perth,Sydney,Perth Airport,Sydney Kingsford Smith Airport,PER,SYD,PER -> SYD,10:13:00.000,14:48:00.000,04:35,0,No info,23650,Direct
+Jetstar Airways,Perth,Sydney,Perth Airport,Sydney Kingsford Smith Airport,PER,SYD,PER -> SYD,10:58:00.000,15:33:00.000,04:35,0,In-flight meal not included,16620,Direct
+Qantas Airways,Sydney,Perth,Sydney Kingsford Smith Airport,Perth Airport,SYD,PER,SYD -> PER,10:05:00.000,14:40:00.000,04:35,0,Business class,26000,Direct
+Virgin Australia,Sydney,Perth,Sydney Kingsford Smith Airport,Perth Airport,SYD,PER,SYD -> PER,10:50:00.000,15:25:00.000,04:35,0,No info,23650,Direct
+Jetstar Airways,Sydney,Perth,Sydney Kingsford Smith Airport,Perth Airport,SYD,PER,SYD -> PER,11:35:00.000,16:10:00.000,04:35,0,In-flight meal not included,16620,Direct
+Qantas Airways,Perth,Brisbane,Perth Airport,Brisbane Airport,PER,BNE,PER -> BNE,10:42:00.000,15:27:00.000,04:45,0,Business class,27000,Direct
+Virgin Australia,Perth,Brisbane,Perth Airport,Brisbane Airport,PER,BNE,PER -> BNE,11:27:00.000,16:12:00.000,04:45,0,No info,24550,Direct
+Jetstar Airways,Perth,Brisbane,Perth Airport,Brisbane Airport,PER,BNE,PER -> BNE,12:12:00.000,16:57:00.000,04:45,0,In-flight meal not included,17240,Direct
+Qantas Airways,Brisbane,Perth,Brisbane Airport,Perth Airport,BNE,PER,BNE -> PER,11:19:00.000,16:04:00.000,04:45,0,Business class,27000,Direct
+Virgin Australia,Brisbane,Perth,Brisbane Airport,Perth Airport,BNE,PER,BNE -> PER,12:04:00.000,16:49:00.000,04:45,0,No info,24550,Direct
+Jetstar Airways,Brisbane,Perth,Brisbane Airport,Perth Airport,BNE,PER,BNE -> PER,12:49:00.000,17:34:00.000,04:45,0,In-flight meal not included,17240,Direct

@@ -1,5 +1,17 @@
-import os, json, pandas as pd, streamlit as st
+"""
+Streamlit UI for the Travel Planner demo.
+
+This file is intentionally kept thin: all heavy lifting (Cortex Agent calls,
+Wikipedia lookups, summarisation) is done in `travel_agent.py` via Bedrock
+AgentCore. Here we:
+- Collect a free-form travel prompt.
+- Invoke the AgentCore runtime.
+- Render the returned trip plan, structured tables, and wiki destination info.
+"""
+
+import os, json, streamlit as st
 import uuid, boto3
+from botocore.config import Config
 
 # ======================
 # Basic Page & Style
@@ -39,11 +51,13 @@ REGION = get_region()
 
 def get_agentcore_client(region_name=None):
     region = region_name or REGION
-    return boto3.client("bedrock-agentcore", region_name=region)
+    # Increase Bedrock AgentCore timeouts so long-running trip plans don't hit client read timeouts.
+    read_t = int(os.environ.get("AGENTCORE_READ_TIMEOUT", "300"))
+    conn_t = int(os.environ.get("AGENTCORE_CONNECT_TIMEOUT", "10"))
+    cfg = Config(read_timeout=read_t, connect_timeout=conn_t)
+    return boto3.client("bedrock-agentcore", region_name=region, config=cfg)
 
 agent_arn = st.sidebar.text_input("Agent ARN", value="", key="agent_arn_input")
-mode = st.sidebar.radio("Agent Mode", ["Standard", "ReAct"], index=0, horizontal=True)
-mode_key = "react" if mode == "ReAct" else "standard"
 
 if "runtime_session_id" not in st.session_state:
     st.session_state.runtime_session_id = str(uuid.uuid4())
@@ -66,7 +80,7 @@ st.markdown(
 )
 
 # ======================
-# Form (simple)
+# Trip prompt form
 # ======================
 with st.form("planner"):
     prompt = st.text_area(
@@ -77,34 +91,44 @@ with st.form("planner"):
     submitted = st.form_submit_button("Plan My Trip")
 
 # ======================
-# Helpers
+# Helpers (UI only)
 # ======================
 card = lambda t, h: st.markdown(f"<div class='card'><h4>{t}</h4>{h}</div>", unsafe_allow_html=True)
 
-def dfshow(name: str, rows):
-    if rows:
-        with st.expander(name):
-            try:
-                st.dataframe(pd.DataFrame(rows))
-            except Exception:
-                st.write(rows)
-
 def parse_event_stream(lines_iter):
-    lines = [line.decode("utf-8")[6:] for line in lines_iter if line and line.decode("utf-8").startswith("data: ")]
-    raw = "".join(lines)
-    try: return json.loads(raw), raw
-    except Exception: return {"raw": raw}, raw
+    """
+    Minimal event-stream helper: assumes backend eventually emits one JSON object as `data: ...`.
+    Uses tolerant UTF-8 decoding to avoid crashes on partial multibyte sequences.
+    """
+    chunks = []
+    for raw in lines_iter:
+        if not raw:
+            continue
+        try:
+            line = raw.decode("utf-8", errors="ignore")
+        except Exception:
+            # Fallback: best-effort decode
+            line = str(raw)
+        if line.startswith("data: "):
+            chunks.append(line[6:])
+    raw_text = "".join(chunks)
+    try:
+        return json.loads(raw_text), raw_text
+    except Exception:
+        return {"raw": raw_text}, raw_text
 
-# --- Submit Flow ---
+# ======================
+# Submit flow: call Bedrock AgentCore runtime
+# ======================
 raw, data = None, None
 if submitted:
     if not agent_arn:
         st.error("Agent ARN is required to invoke the agent. Please provide it in the sidebar.")
     else:
         try:
-            with st.spinner(f"Planning your trip… ({mode})"):
+            with st.spinner("Planning your trip…"):
                 client = get_agentcore_client(REGION)
-                payload = json.dumps({"prompt": prompt, "mode": mode_key}).encode()
+                payload = json.dumps({"prompt": prompt}).encode()
                 response = client.invoke_agent_runtime(
                     agentRuntimeArn=agent_arn,
                     runtimeSessionId=st.session_state.runtime_session_id,
@@ -127,7 +151,6 @@ if submitted and raw is not None:
     with st.expander("Debug: Backend Response", expanded=False):
         st.write("Session ID:", st.session_state.runtime_session_id)
         st.write("Agent ARN:", agent_arn)
-        st.write("Mode:", mode_key)
         st.write("Raw Response:", raw)
         if data: st.json(data)
 
@@ -136,68 +159,81 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# --- Main Display ---
+# ======================
+# Main Display: Wikipedia info, trip plan, and raw context
+# ======================
 if data:
     best = data.get("best_trip_recommendation")
     raw_context = data.get("raw_context")
-    react_trace = data.get("react_trace")
+
+    # Wikipedia destination info first, to give rich context before raw JSON.
+    if isinstance(raw_context, dict):
+        wiki_info = raw_context.get("wiki_destination_info")
+        if isinstance(wiki_info, dict):
+            summaries = wiki_info.get("summaries") or []
+            travel_summary = wiki_info.get("travel_summary") or ""
+            if summaries or travel_summary:
+                with st.expander("Destination Info (Wikipedia)", expanded=True):
+                    # High-level traveller-focused summary from Claude (if available)
+                    if isinstance(travel_summary, str) and travel_summary.strip():
+                        st.markdown("#### Travel Highlights")
+                        st.markdown(travel_summary)
+                        st.markdown("---")
+
+                    # Per-destination rich cards
+                    for s in summaries:
+                        if not isinstance(s, dict):
+                            continue
+                        title = s.get("title") or "Destination"
+                        extract = s.get("extract") or ""
+                        page_url = s.get("page_url")
+                        thumb = s.get("thumbnail")
+                        images = s.get("images") or []
+                        desc = s.get("description")
+
+                        st.markdown(f"### {title}")
+                        # Show primary thumbnail if available
+                        if thumb:
+                            st.image(thumb, width=260)
+                        # Show any additional images (e.g., original image) for richer visuals
+                        for img in images:
+                            if img and img != thumb:
+                                st.image(img, width=260)
+                        if desc:
+                            st.markdown(f"**Short description:** {desc}")
+                        if extract:
+                            st.markdown(f"**Overview:** {extract}")
+                        if page_url:
+                            st.markdown(f"[Open on Wikipedia]({page_url})")
+                        st.markdown("---")
+
     if best:
-        card("Best Trip Recommendation", f"<div class='mono' style='white-space:pre-wrap'>{best}</div>")
-    tab_cfg = [
-        ("Flights (Outbound)", "flights_outbound", "Outbound Segment"),
-        ("Flights (Return)", "flights_return", "Return Segment"),
-        ("Hotels", "hotels", "Hotel Query"),
-        ("Guide", "guide", None),
-        ("Raw", None, None)
-    ]
-    if raw_context or react_trace:
-        tab_names = [t[0] for t in tab_cfg]
-        if react_trace: tab_names.append("ReAct Trace")
-        tabs = st.tabs(tab_names)
-        for i, (tab, (tab_name, ctx_key, seg_label)) in enumerate(zip(tabs, tab_cfg)):
-            with tab:
-                if tab_name == "Guide":
-                    guide = (raw_context or {}).get("guide", {}) or {}
-                    if guide.get("error"): st.error(f"Guide Search Error: {guide['error']}")
-                    else:
-                        gtxt = guide.get("guide_text")
-                        if gtxt: card("Guide Summary", f"<div style='white-space:pre-wrap'>{gtxt}</div>")
-                        results = guide.get("results"); rows = []
-                        if isinstance(results, dict) and "data" in results: rows = results.get("data") or []
-                        elif isinstance(results, list): rows = results
-                        dfshow("Guide Search Rows (raw)", rows)
-                elif tab_name == "Raw":
-                    st.json(raw_context or {})
-                elif ctx_key:
-                    items = (raw_context or {}).get(ctx_key, []) or []
-                    if not items: st.info(f"No {tab_name.lower()} data.")
-                    for idx, f in enumerate(items):
-                        analyst_text = (f or {}).get("analyst_text", "")
-                        fallback_used = (f or {}).get("fallback_used")
-                        header = analyst_text or "(no analyst summary)"
-                        if fallback_used and fallback_used != "none_available":
-                            header += f" · fallback: {fallback_used}"
-                        card(f"{seg_label} {idx+1}", header)
-                        dfshow(f"{tab_name.split()[0]} SQL Results", (f or {}).get("sql_result"))
-        if react_trace:
-            with tabs[-1]:
-                if not react_trace:
-                    st.info("No ReAct trace available.")
-                else:
-                    for i, step in enumerate(react_trace, 1):
-                        thought = step.get("thought", "")
-                        action = step.get("action", "")
-                        args   = step.get("args", {})
-                        obs    = step.get("observation", {})
-                        ok     = obs.get("ok")
-                        rows   = obs.get("rows")
-                        err    = obs.get("error")
-                        head = f"Step {i} — {action} ({'ok' if ok else 'error'})"
-                        body = []
-                        if thought: body.append(f"Thought: {thought}")
-                        if args: body.append(f"Args: {json.dumps(args)}")
-                        if rows is not None:
-                            try: body.append(f"Rows: {len(rows)}")
-                            except Exception: pass
-                        if err: body.append(f"Error: {err}")
-                        card(head, "<br/>".join(body))
+        card("Travel Plan", f"<div class='mono' style='white-space:pre-wrap'>{best}</div>")
+    if raw_context:
+        with st.expander("Raw Context (from agent)", expanded=False):
+            st.json(raw_context)
+
+        # Additionally, try to surface any structured tables the Cortex Agent returned
+        # (e.g. flights and hotels) in a friendlier format, similar to the Snowflake UI.
+        cortex_resp = raw_context.get("cortex_agent_response")
+        if isinstance(cortex_resp, dict):
+            for item in cortex_resp.get("content", []):
+                if not isinstance(item, dict):
+                    continue
+                if item.get("type") != "table":
+                    continue
+                table_block = item.get("table") or {}
+                title = table_block.get("title") or "Details"
+                rs = table_block.get("result_set") or {}
+                meta = (rs.get("resultSetMetaData") or {})
+                row_type = meta.get("rowType") or []
+                # Column names come from rowType metadata
+                columns = [col.get("name", f"col_{i}") for i, col in enumerate(row_type)]
+                rows = rs.get("data") or []
+                if not columns or not rows:
+                    continue
+                # Map each row to a dict for nicer display; limit to first N rows for readability
+                max_rows = 30
+                row_dicts = [dict(zip(columns, r)) for r in rows[:max_rows]]
+                with st.expander(f"Details: {title}", expanded=False):
+                    st.table(row_dicts)

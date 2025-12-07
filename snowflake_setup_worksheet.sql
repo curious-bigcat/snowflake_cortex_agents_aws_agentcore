@@ -10,8 +10,8 @@ create stage docs ENCRYPTION = (TYPE = 'SNOWFLAKE_SSE');
 create stage data ENCRYPTION = (TYPE = 'SNOWFLAKE_SSE');
 
 -- 3. (Optional) Allow all IPs for testing (not for production)
-CREATE NETWORK POLICY allow_all_policy ALLOWED_IP_LIST = ('');
-ALTER USER <your_user> SET NETWORK_POLICY = allow_all_policy;
+-- CREATE NETWORK POLICY allow_all_policy ALLOWED_IP_LIST = ('');
+-- ALTER USER <your_user> SET NETWORK_POLICY = allow_all_policy;
 
 -- 4. Upload data files to @data stage (flight_data.csv, hotel_data.csv, Travel_Plan_Guide.pdf)
 -- Use Snowflake Web UI or PUT command
@@ -39,6 +39,11 @@ CREATE OR REPLACE TABLE FLIGHT_DATA (
     DIRECT_CONNECTING STRING
 );
 
+
+SHOW AGENTS IN SCHEMA TRAVEL_DB.PUBLIC;
+
+select * from FLIGHT_DATA where destination = 'Tokyo';
+
 CREATE OR REPLACE TABLE HOTEL_DATA (
     HOTEL_NAME VARCHAR,
     HOTEL_RATING FLOAT,
@@ -56,8 +61,8 @@ CREATE OR REPLACE TABLE HOTEL_DATA (
 );
 
 -- 6. Load data from CSVs
-COPY INTO FLIGHT_DATA FROM @data/flight_data.csv FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY='"' SKIP_HEADER=1);
-COPY INTO HOTEL_DATA FROM @data/hotel_data.csv FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY='"' SKIP_HEADER=1);
+-- COPY INTO FLIGHT_DATA FROM @data/flight_data.csv FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY='"' SKIP_HEADER=1);
+-- COPY INTO HOTEL_DATA FROM @data/hotel_data.csv FILE_FORMAT = (TYPE = 'CSV' FIELD_OPTIONALLY_ENCLOSED_BY='"' SKIP_HEADER=1);
 
 -- 7. Parse PDF and extract text
 CREATE OR REPLACE TABLE RAW_TEXT_TRAVEL AS
@@ -65,16 +70,16 @@ SELECT
     RELATIVE_PATH,
     SIZE,
     FILE_URL,
-    BUILD_SCOPED_FILE_URL(@TRAVEL_DB.PUBLIC.DATA, RELATIVE_PATH) AS SCOPED_FILE_URL,
+    BUILD_SCOPED_FILE_URL(@TRAVEL_DB.PUBLIC.docs, RELATIVE_PATH) AS SCOPED_FILE_URL,
     TO_VARCHAR(
         SNOWFLAKE.CORTEX.PARSE_DOCUMENT(
-            '@TRAVEL_DB.PUBLIC.DATA',
+            '@TRAVEL_DB.PUBLIC.docs',
             RELATIVE_PATH,
             {'mode': 'LAYOUT'}
         ):content
     ) AS EXTRACTED_LAYOUT
 FROM 
-    DIRECTORY(@TRAVEL_DB.PUBLIC.DATA);
+    DIRECTORY(@TRAVEL_DB.PUBLIC.docs);
 
 -- 8. Chunk the extracted text
 CREATE OR REPLACE TABLE DOCS_CHUNKS_TABLE (
@@ -150,7 +155,6 @@ AS (
     FROM DOCS_CHUNKS_TABLE
 );
 
--- 11. Test Data and Search
-SELECT * FROM TRAVEL_DB.PUBLIC.FLIGHT_DATA;
-SELECT * FROM TRAVEL_DB.PUBLIC.HOTEL_DATA;
-SELECT * FROM SNOWFLAKE.CORTEX.SEARCH('TRAVEL_SEARCH_SERVICE', 'Give me a 3-day itinerary for chennai');
+
+select * from docs_chunks_table;
+

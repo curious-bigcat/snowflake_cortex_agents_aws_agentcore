@@ -1,4 +1,4 @@
-default_agent: my_new_travel_agent
+default_agent: travel_agent
 agents:
   travel_planning_agent:
     name: travel_planning_agent
@@ -88,14 +88,14 @@ agents:
     name: my_new_travel_agent
     entrypoint: my_new_travel_agent.py
     platform: linux/arm64
-    container_runtime: none
+    container_runtime: docker
     aws:
       execution_role: arn:aws:iam::484577546576:role/AgentRuntimeRole
       execution_role_auto_create: true
       account: '484577546576'
       region: us-east-1
-      ecr_repository: 484577546576.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-my_new_travel_agent
-      ecr_auto_create: false
+      ecr_repository: null
+      ecr_auto_create: true
       network_configuration:
         network_mode: PUBLIC
       protocol_configuration:
@@ -107,8 +107,36 @@ agents:
       agent_arn: arn:aws:bedrock-agentcore:us-east-1:484577546576:runtime/my_new_travel_agent-mTXjBh7Wu9
       agent_session_id: null
     codebuild:
-      project_name: bedrock-agentcore-my_new_travel_agent-builder
-      execution_role: arn:aws:iam::484577546576:role/AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-c376b670f9
+      project_name: null
+      execution_role: null
+      source_bucket: null
+    authorizer_configuration: null
+    oauth_configuration: null
+  travel_agent:
+    name: travel_agent
+    entrypoint: travel_agent.py
+    platform: linux/arm64
+    container_runtime: docker
+    aws:
+      execution_role: arn:aws:iam::484577546576:role/AgentRuntimeRole
+      execution_role_auto_create: true
+      account: '484577546576'
+      region: us-east-1
+      ecr_repository: 484577546576.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-travel_agent
+      ecr_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+    bedrock_agentcore:
+      agent_id: travel_agent-rPUlsV9Dxe
+      agent_arn: arn:aws:bedrock-agentcore:us-east-1:484577546576:runtime/travel_agent-rPUlsV9Dxe
+      agent_session_id: null
+    codebuild:
+      project_name: bedrock-agentcore-travel_agent-builder
+      execution_role: arn:aws:iam::484577546576:role/AmazonBedrockAgentCoreSDKCodeBuild-us-east-1-e078875214
       source_bucket: bedrock-agentcore-codebuild-sources-484577546576-us-east-1
     authorizer_configuration: null
     oauth_configuration: null

@@ -6,3 +6,4 @@ snowflake-core
 snowflake-snowpark-python
 fastapi
 boto3
+google-search-results

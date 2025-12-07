@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Local secrets (do not commit real credentials)
+agentcore_secrets.json
+
+

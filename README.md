@@ -233,6 +233,121 @@ streamlit run streamlit_coordinator_travel_agent.py
 
 ---
 
+## Step-by-Step Setup & Run Guide
+
+You can follow the **Snowflake-first → AWS AgentCore → Streamlit** flow below.
+
+### 1. Prerequisites
+
+- **Snowflake** account with Cortex Agents enabled.
+- **AWS** account with:
+  - Bedrock + AgentCore access.
+  - Permissions for AWS Secrets Manager.
+- **Local dev machine** with Python 3.9+ and the ability to run Streamlit.
+
+### 2. Snowflake Setup (Data + Cortex Agent)
+
+1. Open `snowflake_setup_worksheet.sql` in Snowsight.
+2. Run it step-by-step (or as a whole) to:
+   - Create `TRAVEL_DB.PUBLIC`.
+   - Create and load `FLIGHT_DATA`, `HOTEL_DATA`.
+   - Stage the travel guide PDF and configure Cortex Search over it.
+   - Create the **Cortex Agent** `TRAVEL_DB.PUBLIC.TRAVEL_AGENT` with tools like:
+     - `hotel_flight_analyst` (Cortex Analyst),
+     - `cortex_search` (travel guides),
+     - `data_to_chart` (charts).
+3. Verify in Snowsight:
+   - Data is present in `TRAVEL_DB.PUBLIC.FLIGHT_DATA` and `HOTEL_DATA`.
+   - `TRAVEL_AGENT` appears under Data » Agents and answers a simple question.
+
+> The Python app only talks to this single `TRAVEL_AGENT` via REST; it never calls Analyst/Search directly.
+
+### 3. AWS Secrets Manager Configuration
+
+Create a JSON secret (for example `agentcore/travelplanner/credentials`) with at least:
+
+```json
+{
+  "SNOWFLAKE_ACCOUNT": "your_account_locator_or_host",
+  "SNOWFLAKE_DATABASE": "TRAVEL_DB",
+  "SNOWFLAKE_SCHEMA": "PUBLIC",
+  "CORTEX_AGENT_DATABASE": "TRAVEL_DB",
+  "CORTEX_AGENT_SCHEMA": "PUBLIC",
+  "CORTEX_AGENT_NAME": "TRAVEL_AGENT",
+  "SNOWFLAKE_AUTH_TOKEN": "<PROGRAMMATIC_ACCESS_TOKEN>",
+  "MODEL_ID": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+  "WIKI_USER_AGENT": "YourAppName/1.0 (contact@example.com)"
+}
+```
+
+Notes:
+- `SNOWFLAKE_ACCOUNT` can be either the account locator or full host; the code normalises it.
+- `SNOWFLAKE_AUTH_TOKEN` must be a **programmatic access token** with permission to run the Cortex Agent.
+
+Record the **secret ARN**; you’ll use it as `AGENTCORE_SECRET_NAME`.
+
+### 4. Run the AgentCore App (`travel_agent.py`)
+
+Install dependencies:
+
+```bash
+cd snowflake_aws_agentcore
+pip install -r requirements.txt
+```
+
+For **local testing**:
+
+```bash
+export AGENTCORE_SECRET_NAME="<arn:aws:secretsmanager:...:secret:agentcore/travelplanner/credentials-...>"
+python travel_agent.py
+```
+
+In AWS AgentCore, deploy `travel_agent.py` (and its dependencies) as a runtime, and set `AGENTCORE_SECRET_NAME` in the runtime’s environment.
+
+The entrypoint `invoke(payload)` expects:
+
+- `payload["prompt"]`: user’s travel question.
+- (Optional) `payload["mode"] == "wiki"`: for wiki-only responses.
+
+For normal Trip Plan calls (no `mode`), it returns:
+
+```jsonc
+{
+  "best_trip_recommendation": "<markdown trip plan>",
+  "raw_context": {
+    "cortex_agent_response": { "...": "..." },
+    "wiki_destination_info": {
+      "destinations": ["Tokyo", "Singapore"],
+      "summaries": [/* per-destination wiki data */],
+      "travel_summary": "<markdown travel highlights>"
+    }
+  }
+}
+```
+
+### 5. Streamlit UI
+
+From the project root:
+
+```bash
+pip install streamlit
+streamlit run streamlit_coordinator_travel_agent.py
+```
+
+In the Streamlit app:
+
+1. Set **AWS Region** in the sidebar (e.g. `us-east-1`).
+2. Paste your **Agent ARN** (Bedrock AgentCore runtime ARN).
+3. Enter a free-form prompt such as:
+   - “Plan an 8-day family trip from Bengaluru to Singapore, with hotels, sightseeing and budget.”
+4. Click **“Plan My Trip”**.
+
+The app will show:
+
+- **Destination Info (Wikipedia)** – Claude-written travel highlights plus cards for each destination (images, descriptions, links).
+- **Travel Plan** – Markdown trip plan from Snowflake `TRAVEL_AGENT`.
+- **Raw Context (from agent)** – Full JSON, plus flight/hotel tables rendered under “Details: …” expanders.
+
 ## Security & Best Practices
 - **Secrets:** All credentials are stored in AWS Secrets Manager and loaded at runtime. Never hardcode secrets.
 - **IAM:** The agent runs with least-privilege IAM permissions (see CloudFormation template).

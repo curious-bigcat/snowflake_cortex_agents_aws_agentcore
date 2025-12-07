@@ -123,21 +123,6 @@ You can create a semantic view using the wizard or by uploading a YAML file:
 - Follow the wizard to select tables, columns, and define facts, dimensions, metrics, and relationships.
 - Save your semantic view.
 
-**B. Uploading a YAML Specification**
-- In Snowsight, go to Data » Databases, select your database and schema.
-- Click Create » Semantic View » Upload YAML file.
-- Select your YAML file and upload it.
-- Choose the database, schema, and stage for the file.
-- Click Upload.
-
-**Editing and Sharing**
-- Edit semantic views from the Semantic views tab in Snowsight or Cortex Analyst.
-- Share access by selecting More options » Share and choosing the appropriate role.
-
-**Best Practices**
-- Use clear, business-friendly names and descriptions.
-- Add representative user questions and synonyms.
-- Test with real business questions and iterate.
 
 ### 3. Cortex Search Configuration
 
